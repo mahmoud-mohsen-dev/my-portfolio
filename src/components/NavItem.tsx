@@ -1,4 +1,4 @@
-import { NavItemProps } from '../dist-types/types';
+import { NavItemProps } from '../types/types';
 
 function NavItem({ text, id, active, darkModeIsOn, setActive }: NavItemProps<string>) {
   const isActive = id === active;

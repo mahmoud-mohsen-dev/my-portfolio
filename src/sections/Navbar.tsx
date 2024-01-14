@@ -5,7 +5,7 @@ import whiteSun from '../assets/sun-white.svg';
 import blackSun from '../assets/sun-black.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
-import { NavbarProps } from '../dist-types/types';
+import { NavbarProps } from '../types/types';
 function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
   const [isOpen, setOpen] = useState(false);
