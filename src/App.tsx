@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Navbar from './sections/Navbar';
 
 function App() {
-  const [darkModeIsOn, setDarkModeIsOn] = useState(false);
+  const [darkModeIsOn, setDarkModeIsOn] = useState(true);
 
   return (
     <div>
