@@ -60,7 +60,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
               CV
             </a>
 
-            <button className="mt-5 md:mt-0" onClick={() => setDarkModeIsOn((prev) => !prev)}>
+            <button className="mt-5 md:mt-0" onClick={() => setDarkModeIsOn((prev: boolean) => !prev)}>
               <img src={darkModeIsOn ? whiteSun : blackSun} alt="dark-mode-button" className=" w-8" />
             </button>
           </div>
