@@ -1,5 +1,11 @@
+import Navbar from './sections/Navbar';
+
 function App() {
-  return <div className="text-3xl font-bold underline font-titan">hi</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
