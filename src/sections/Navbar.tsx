@@ -1,25 +1,29 @@
 import { useState } from 'react';
-import logo from '../assets/Logo Primary.svg';
+import logoPrimary from '../assets/Logo-Primary.svg';
+import logoDanger from '../assets/Logo-red.svg';
 import whiteSun from '../assets/sun-white.svg';
 import blackSun from '../assets/sun-black.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
-function Navbar() {
-  const [darkModeIsOn, setDarkModeIsOn] = useState(false);
-
+import { NavbarProps } from '../dist/types';
+function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   const [isOpen, setOpen] = useState(false);
   const [openNav, setOpenNav] = useState(false);
 
+  const color = darkModeIsOn ? ' bg-secondary  text-black' : 'bg-black  text-white';
+
   return (
-    <header className={`  ${darkModeIsOn ? 'bg-secondary' : 'bg-primary'}`}>
-      <div className="container mx-auto duration-300 md:duration-0 h-20 flex items-center justify-between md:h-16 ">
-        <div className="flex items-center justify-between w-full px-3 md:w-fit">
-          <img src={logo} alt="portfolio-logo" className=" inline-block md:h-14" />
+    <header className={`${color}`}>
+      <div className="container mx-auto flex h-20 items-center justify-between duration-300 md:h-16 md:duration-0 ">
+        <div className="flex w-full items-center justify-between px-3 ">
+          <img src={darkModeIsOn ? logoPrimary : logoDanger} alt="portfolio-logo" className=" inline-block md:h-14" />
           {/* hamburger Menu */}
-          <div className="md:hidden">
+          <div className=" md:hidden !*:transition-transform">
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
+              duration={0.3}
+              color={darkModeIsOn ? '#0E2431' : 'white'}
               onToggle={(toggled) => {
                 if (toggled) {
                   // open a menu
@@ -34,22 +38,22 @@ function Navbar() {
         </div>
 
         <nav
-          className={`text-4xl font-poppins fixed top-0 py-32 px-36 flex flex-col items-center justify-around h-screen -z-10 w-full max-w-lg transition-all duration-300 md:duration-0 md:flex-row md:static md:h-full md:px-2 md:z-0 md:text-2xl md:font-semibold md:p-0 md:max-w-none  ${darkModeIsOn ? ' bg-secondary  text-black' : 'bg-black  text-white md:bg-primary'}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 -z-10 flex h-screen w-full max-w-lg flex-col items-center justify-around px-36 py-32 font-poppins text-4xl tracking-wide transition-transform duration-300 md:static md:z-0 md:h-full md:max-w-none md:flex-row md:justify-end md:p-0 md:px-2 md:text-xl md:font-semibold md:duration-0 lg:text-3xl  ${color}  ${openNav ? ' left-0' : '-left-full'}`}
         >
-          <ul className=" basis-2/3 flex flex-col justify-between text-center md:flex-row md:gap-10 md:absolute md:left-1/2 -translate-x-1/2">
+          <ul className=" flex basis-2/3 flex-col justify-between text-center md:absolute md:left-1/2 md:-translate-x-1/2 md:flex-row md:gap-10">
             <NavItem text="home" />
             <NavItem text="about" />
             <NavItem text="projects" />
             <NavItem text="contact" />
           </ul>
 
-          <div className=" flex items-center justify-center w-full flex-wrap gap-10 sm:justify-between md:flex-row md:gap-10 md:flex-nowrap md:max-w-40 md:ml-16 md:w-fit">
+          <div className="mt-5 flex w-full flex-wrap items-center justify-center gap-10 md:ml-16  md:mt-0 md:max-w-40 md:flex-row md:flex-nowrap md:gap-8">
             <a href="#cv" className="mt-5 md:mt-0">
               CV
             </a>
 
             <button className="mt-5 md:mt-0" onClick={() => setDarkModeIsOn((prev) => !prev)}>
-              <img src={darkModeIsOn ? blackSun : whiteSun} alt="dark-mode-button" className=" w-12 max-w-none" />
+              <img src={darkModeIsOn ? blackSun : whiteSun} alt="dark-mode-button" className=" w-8" />
             </button>
           </div>
         </nav>
