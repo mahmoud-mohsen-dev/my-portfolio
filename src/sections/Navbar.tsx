@@ -5,7 +5,7 @@ import whiteSun from '../assets/sun-white.svg';
 import blackSun from '../assets/sun-black.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
-import { NavbarProps } from '../types/types';
+import { NavbarProps } from '../types/myTypes';
 function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
   const [isOpen, setOpen] = useState(false);
@@ -18,12 +18,12 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   const cvBtnStyles = darkModeIsOn ? 'text-white hover:bg-red-dark' : 'text-red-dark';
 
   return (
-    <header className={`${navStyles}`}>
-      <div className="container mx-auto flex h-20 items-center justify-between duration-300 md:h-16 md:duration-0 ">
-        <div className="flex w-full items-center justify-between px-3 ">
+    <header className={`${navStyles} fixed top-0 w-full`}>
+      <div className="container mx-auto flex h-20 items-center justify-between ">
+        <div className="flex w-full items-center justify-between px-3 relative z-50">
           <img src={darkModeIsOn ? logoDanger : logoPrimary} alt="portfolio-logo" className=" inline-block md:h-14" />
           {/* hamburger Menu */}
-          <div className=" md:hidden !*:transition-transform">
+          <div className=" md:hidden" id="hamburger">
             <Hamburger
               toggled={isOpen}
               toggle={setOpen}
@@ -43,7 +43,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
         </div>
 
         <nav
-          className={`fixed top-0 -z-10 flex h-screen w-full max-w-lg flex-col items-center justify-around px-36 py-32 font-poppins text-4xl tracking-wide transition-transform duration-300 md:static md:z-0 md:h-full md:max-w-none md:flex-row md:justify-end md:p-0 md:px-2 md:text-xl font-semibold md:duration-0 lg:text-3xl  ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-around px-36 py-32 font-poppins text-4xl tracking-wide  duration-300 md:static md:z-0 md:h-full md:max-w-none md:flex-row md:justify-end md:p-0 md:px-2 md:text-xl font-semibold md:duration-0 lg:text-3xl transition-[left] ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
           <ul className=" flex basis-2/3 flex-col justify-between text-center md:absolute md:left-1/2 md:-translate-x-1/2 md:flex-row md:gap-10">
             <NavItem text="home" id="1" active={active} setActive={setActive} darkModeIsOn={darkModeIsOn} />

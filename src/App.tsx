@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import Navbar from './sections/Navbar';
+import Hero from './sections/Hero';
 
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(true);
 
   return (
-    <div>
+    <>
       <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
-    </div>
+      <Hero darkModeIsOn={darkModeIsOn} />
+    </>
   );
 }
 

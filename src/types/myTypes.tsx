@@ -12,3 +12,7 @@ export type NavItemProps<T> = {
   darkModeIsOn: boolean;
   setActive: setState<T>;
 };
+
+export interface HeroProps {
+  darkModeIsOn: boolean;
+}

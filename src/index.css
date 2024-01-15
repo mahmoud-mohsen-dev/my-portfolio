@@ -1,4 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Paytone+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,900&family=Titan+One&display=swap');
 @tailwind base;
+
+:root {
+  --primary: #0e2431;
+  --secondary: #808181;
+  scroll-behavior: smooth;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary) var(--primary);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--primary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary);
+  /* border: 3px solid var(--primary); */
+}
+#hamburger .hamburger-react {
+  transition-property: transform !important;
+}
+#hamburger .hamburger-react > * {
+  transition-property: transform !important;
+}
 @tailwind components;
 @tailwind utilities;
