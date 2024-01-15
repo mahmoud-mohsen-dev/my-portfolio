@@ -1,8 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+// const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        buttonShadow: '0px 0px 25px 0px rgba(0, 0, 0, 0.25)',
+      },
+      // screens: {
+      //   xs: '375px',
+      // },
+    },
     fontFamily: {
       mochiy: ['"Mochiy Pop One"', 'sans-serif'],
       Paytone: ['"Paytone One"', 'sans-serif'],
@@ -23,6 +31,17 @@ export default {
       'gray-dark': '#2E353A',
       'gray-medium': '#5F6366',
     },
+    // container: {
+    //   center: true,
+    //   padding: {
+    //     DEFAULT: '1rem',
+    //     xs: '0rem',
+    //   },
+    //   // screens: {
+    //   //   xs: '350px',
+    //   //   ...defaultTheme.screens,
+    //   // },
+    // },
   },
   plugins: [],
 };

@@ -18,7 +18,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   const cvBtnStyles = darkModeIsOn ? 'text-white hover:bg-red-dark' : 'text-red-dark';
 
   return (
-    <header className={`${navStyles} fixed top-0 w-full`}>
+    <header className={`${navStyles} fixed top-0 w-full z-50`}>
       <div className="container mx-auto flex h-20 items-center justify-between ">
         <div className="flex w-full items-center justify-between px-3 relative z-50">
           <img src={darkModeIsOn ? logoDanger : logoPrimary} alt="portfolio-logo" className=" inline-block md:h-14" />

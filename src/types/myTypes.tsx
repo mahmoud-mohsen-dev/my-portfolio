@@ -16,3 +16,9 @@ export type NavItemProps<T> = {
 export interface HeroProps {
   darkModeIsOn: boolean;
 }
+
+export interface ButtonProps<M> {
+  className: M;
+  children: M;
+  onClick: () => void;
+}

@@ -3,12 +3,15 @@ import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
 
 function App() {
-  const [darkModeIsOn, setDarkModeIsOn] = useState(true);
+  const [darkModeIsOn, setDarkModeIsOn] = useState(false);
 
   return (
     <>
       <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
-      <Hero darkModeIsOn={darkModeIsOn} />
+      <main>
+        <Hero darkModeIsOn={darkModeIsOn} />
+      </main>
+      <footer></footer>
     </>
   );
 }
