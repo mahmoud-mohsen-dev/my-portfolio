@@ -7,6 +7,9 @@ export default {
       boxShadow: {
         buttonShadow: '0px 0px 25px 0px rgba(0, 0, 0, 0.25)',
       },
+      backgroundImage: {
+        'hero-back': "url('./assets/back-img.svg')",
+      },
       // screens: {
       //   xs: '375px',
       // },
@@ -43,5 +46,5 @@ export default {
     //   // },
     // },
   },
-  plugins: [],
+  plugins: ['prettier-plugin-tailwindcss'],
 };

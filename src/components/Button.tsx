@@ -3,7 +3,7 @@ import { ButtonProps } from '../types/myTypes';
 function Button({ className, children, onClick }: ButtonProps<string>) {
   return (
     <button
-      className={`font-titan text-white px-5 rounded-xl shadow-buttonShadow text-2xl hover:scale-110 transition-all cursor-pointer active:scale-100 tracking-wide font-normal py-4 ${className} `}
+      className={`cursor-pointer rounded-xl px-5 py-4 font-titan text-2xl font-normal tracking-wide text-white shadow-buttonShadow transition-all hover:scale-110 active:scale-100 ${className} `}
       onClick={() => onClick()}
     >
       {children}
