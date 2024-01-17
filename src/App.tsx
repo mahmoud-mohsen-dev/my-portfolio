@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navbar from './sections/Navbar';
 import Hero from './sections/Hero';
+import About from './sections/About';
 
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
@@ -10,6 +11,7 @@ function App() {
       <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
       <main>
         <Hero darkModeIsOn={darkModeIsOn} />
+        <About />
       </main>
       <footer></footer>
     </>

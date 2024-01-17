@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import logoPrimary from '../assets/Logo-Primary.svg';
-import logoDanger from '../assets/Logo-red.svg';
+import logoPrimary from '../assets/logo-primary.svg';
+import logoDanger from '../assets/logo-red.svg';
 import whiteSun from '../assets/sun-white.svg';
 import blackSun from '../assets/sun-black.svg';
 import { Fade as Hamburger } from 'hamburger-react';

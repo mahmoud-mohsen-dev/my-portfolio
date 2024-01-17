@@ -10,6 +10,13 @@ export default {
       backgroundImage: {
         'hero-back': "url('./assets/back-img.svg')",
       },
+      gridTemplateColumns: {
+        'fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
+        'fit-300': 'repeat(auto-fit, minmax(300px, 1fr))',
+        'fit-400': 'repeat(auto-fit, minmax(400px, 1fr))',
+        'fit-500': 'repeat(auto-fit, minmax(500px, 1fr))',
+        'fit-600': 'repeat(auto-fit, minmax(600px, 1fr))',
+      },
     },
     fontFamily: {
       mochiy: ['"Mochiy Pop One"', 'sans-serif'],

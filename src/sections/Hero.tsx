@@ -1,5 +1,5 @@
 import { HeroProps } from '../types/myTypes';
-import coding from '../assets/Coding.svg';
+import coding from '../assets/coding.svg';
 import Button from '../components/Button';
 import lines from '../assets/lines.svg';
 import blobShap from '../assets/blob-hero-section.svg';
@@ -10,7 +10,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
 
   return (
-    <section className={`relative z-10 h-dvh py-20 ${heroStyles}`}>
+    <section className={`relative z-10 h-screen overflow-hidden py-20 ${heroStyles}`}>
       {/* Hero section content */}
       <div className="container h-full grid-cols-12 grid-rows-12 md-tab:grid ">
         <img
