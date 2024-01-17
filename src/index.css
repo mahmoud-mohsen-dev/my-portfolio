@@ -36,16 +36,8 @@
 @tailwind utilities;
 
 .text-stroke-3 {
-  color: transparent;
-  -webkit-text-stroke: 3px #4675f4;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-position: 0 0;
+  -webkit-text-stroke: 2px #4675f4;
   animation: back 22.5s linear infinite;
-  letter-spacing: 2.5px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif !important;
-  font-size: 74px !important;
 }
 
 @keyframes back {

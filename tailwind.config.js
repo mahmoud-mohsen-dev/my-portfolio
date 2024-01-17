@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-// const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -10,9 +10,6 @@ export default {
       backgroundImage: {
         'hero-back': "url('./assets/back-img.svg')",
       },
-      // screens: {
-      //   xs: '375px',
-      // },
     },
     fontFamily: {
       mochiy: ['"Mochiy Pop One"', 'sans-serif'],
@@ -35,20 +32,23 @@ export default {
       'gray-medium': '#5F6366',
     },
     screens: {
-      xs: '375px',
-      sm: '450px',
-      md: '768px',
-      lg: '1024px',
-      xl: '1280px',
-      '2xl': '1500px',
+      'md-mob': '375px',
+      'lg-mob': '450px',
+      'sm-tab': '600px',
+      'md-tab': '768px',
+      'lg-tab': '875px',
+      'sm-des': '1024px',
+      'md-des': '1280px',
+      'lg-des': '1500px',
     },
     container: {
       center: true,
       padding: {
         DEFAULT: '1rem',
-        lg: '2rem',
-        xl: '3rem',
-        '2xl': '4rem',
+        'md-tab': '4rem',
+        'lg-tab': '2rem',
+        'md-des': '3rem',
+        'lg-des': '5rem',
       },
     },
 
