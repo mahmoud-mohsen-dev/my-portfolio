@@ -10,23 +10,23 @@ function Hero({ darkModeIsOn }: HeroProps) {
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
 
   return (
-    <section className={`relative z-10 h-dvh overflow-hidden py-20 ${heroStyles}`}>
+    <section className={`relative z-10 h-dvh py-20 ${heroStyles}`}>
       {/* Hero section content */}
       <div className="container h-full grid-cols-12 grid-rows-12 md-tab:grid ">
         <img
           src={coding}
           alt="coding"
-          className="  col-span-8 col-start-5 row-span-6 row-start-2 mx-auto max-h-[50%] md-tab:max-h-full"
+          className="  col-span-8 mt-4 md-tab:mt-0 col-start-6 row-span-6 row-start-3 mx-auto max-h-[50%] md-tab:max-h-full md-des:col-start-8 md-des:row-start-3 md-des:mb-5 md-des:ml-16 md-des:col-span-5 md-des:row-span-8 lg-des:col-span-5 lg-des:col-start-7  lg-des:row-span-10 lg-des:row-start-2"
         />
-        <div className=" col-span-12 col-start-1 row-start-8 mt-4 text-center font-poppins text-xl sm-tab:text-3xl font-bold tracking-wide md-tab:max-w-fit md-tab:text-left md-tab:text-4xl md-tab:m-auto md-des:m-[unset]">
+        <div className=" col-span-12 col-start-1 row-start-8 sm-des:row-start-9 md-des:row-start-8 mt-4 text-center font-poppins text-xl sm-tab:text-3xl font-bold tracking-wide md-tab:max-w-fit md-tab:text-left md-tab:text-4xl md-tab:m-auto md-des:m-[unset]">
           <h2 className="capitalize">hi, i&rsquo;m</h2>
           <h1
-            className={`text-stroke-3 my-2 bg-hero-back bg-clip-text bg-[0_0] font-poppins text-2xl md-mob:text-3xl sm-tab:text-5xl uppercase tracking-wider text-[transparent] md-tab:text-[59px] lg-tab:text-7xl md-des:text-6xl lg-des:text-7xl`}
+            className={`text-stroke-3 my-2 md-tab:my-5 md-des:my-3 bg-hero-back bg-clip-text bg-[0_0] font-poppins text-2xl md-mob:text-3xl sm-tab:text-5xl uppercase tracking-wider text-[transparent] md-tab:text-[59px] lg-tab:text-7xl`}
           >
             mahmoud mohsen
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
-          <Button className={` mx-auto mt-3 block bg-primary md-tab:ml-auto md-tab:mr-0 `} onClick={() => {}}>
+          <Button className={` mx-auto mt-5 block bg-primary md-des:ml-auto md-des:mr-0 `} onClick={() => {}}>
             Projects
           </Button>
         </div>

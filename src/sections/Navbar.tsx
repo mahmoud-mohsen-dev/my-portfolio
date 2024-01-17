@@ -33,7 +33,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
             <img
               src={darkModeIsOn ? logoDanger : logoPrimary}
               alt="portfolio-logo"
-              className="h-16 md-tab:h-10 lg-tab:h-16"
+              className="h-16 md-tab:h-11 sm-des:h-16"
             />
           </a>
           {/* hamburger Menu */}
@@ -58,9 +58,9 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
         {/* Navbar items and cv button and darkMode button */}
         <div
-          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-around pb-10 pt-24 font-poppins text-4xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-2xl md-tab:duration-0 lg-tab:text-3xl md-des:text-4xl ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-4xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-2xl md-tab:duration-0 lg-tab:text-3xl md-des:text-4xl ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
-          <ul className=" flex basis-2/3 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-3 lg-tab:gap-5 md-des:gap-10">
+          <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-3 lg-tab:gap-5 md-des:gap-10">
             <NavItem
               text="home"
               id="1"
@@ -95,10 +95,10 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
             />
           </ul>
 
-          <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:mt-0 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-1 lg-tab:gap-3">
+          <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-1 lg-tab:gap-3">
             <a
               href="#cv"
-              className={`rounded-full px-3 py-1 hover:scale-110 hover:transition-all hover:duration-200 active:scale-100 md-tab:mt-0 ${cvBtnStyles}`}
+              className={`rounded-full px-3 py-1 hover:scale-110 hover:transition-all hover:duration-200 active:scale-100 ${cvBtnStyles}`}
               onClick={() => closeNavWindow()}
             >
               CV
