@@ -3,11 +3,10 @@ import coding from '../assets/Coding.svg';
 import Button from '../components/Button';
 import lines from '../assets/lines.svg';
 import blobShap from '../assets/blob-hero-section.svg';
-import circleLines from '../assets/weird-shap-hero-section.svg';
+import circleLines from '../assets/weird-shape-hero-section.svg';
 
 function Hero({ darkModeIsOn }: HeroProps) {
   const heroStyles = darkModeIsOn ? 'bg-gray-dark text-white' : 'bg-secondary';
-  // const nameStyles = darkModeIsOn ? 'text-blue-medium' : 'text-primary';
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
 
   return (
@@ -21,7 +20,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
         <div className=" col-span-7 col-start-1 row-start-6 mt-4 text-center font-poppins text-2xl font-bold tracking-wide sm:max-w-fit sm:text-left md:text-3xl">
           <h2 className="capitalize">hi i&rsquo;m</h2>
           <h1
-            className={`my-2 font-mochiy text-3xl uppercase md:mb-4 md:mt-2 md:text-4xl lg:text-6xl text-transparent bg-hero-back text-stroke-3`}
+            className={`text-transparent text-stroke-3 my-2 bg-hero-back font-mochiy text-3xl uppercase md:mb-4 md:mt-2 md:text-4xl lg:text-6xl`}
           >
             mahmoud mohsen
           </h1>

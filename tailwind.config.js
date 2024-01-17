@@ -34,17 +34,24 @@ export default {
       'gray-dark': '#2E353A',
       'gray-medium': '#5F6366',
     },
-    // container: {
-    //   center: true,
-    //   padding: {
-    //     DEFAULT: '1rem',
-    //     xs: '0rem',
-    //   },
-    //   // screens: {
-    //   //   xs: '350px',
-    //   //   ...defaultTheme.screens,
-    //   // },
-    // },
+    screens: {
+      xs: '375px',
+      sm: '450px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1500px',
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: '1rem',
+        lg: '2rem',
+        xl: '3rem',
+        '2xl': '4rem',
+      },
+    },
+
+    plugins: ['prettier-plugin-tailwindcss'],
   },
-  plugins: ['prettier-plugin-tailwindcss'],
 };
