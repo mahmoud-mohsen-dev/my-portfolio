@@ -16,12 +16,12 @@ function Hero({ darkModeIsOn }: HeroProps) {
         <img
           src={coding}
           alt="coding"
-          className="  col-span-8 mt-4 md-tab:mt-0 col-start-6 row-span-6 row-start-3 mx-auto max-h-[50%] md-tab:max-h-full md-des:col-start-8 md-des:row-start-3 md-des:mb-5 md-des:ml-16 md-des:col-span-5 md-des:row-span-8 lg-des:col-span-5 lg-des:col-start-7  lg-des:row-span-10 lg-des:row-start-2"
+          className="  col-span-8 col-start-6 row-span-6 row-start-3 mx-auto mt-4 max-h-[50%] md-tab:mt-0 md-tab:max-h-full md-des:col-span-5 md-des:col-start-8 md-des:row-span-8 md-des:row-start-3 md-des:mb-5 md-des:ml-16 lg-des:col-span-5 lg-des:col-start-8  lg-des:row-span-10 lg-des:row-start-2"
         />
-        <div className=" col-span-12 col-start-1 row-start-8 sm-des:row-start-9 md-des:row-start-8 mt-4 text-center font-poppins text-xl sm-tab:text-3xl font-bold tracking-wide md-tab:max-w-fit md-tab:text-left md-tab:text-4xl md-tab:m-auto md-des:m-[unset]">
+        <div className=" col-span-12 col-start-1 row-start-8 mt-4 text-center font-poppins text-xl font-bold tracking-wide sm-tab:text-3xl md-tab:m-auto md-tab:max-w-fit md-tab:text-left md-tab:text-4xl sm-des:row-start-9 md-des:row-start-7 md-des:m-[unset]">
           <h2 className="capitalize">hi, i&rsquo;m</h2>
           <h1
-            className={`text-stroke-3 my-2 md-tab:my-5 md-des:my-3 bg-hero-back bg-clip-text bg-[0_0] font-poppins text-2xl md-mob:text-3xl sm-tab:text-5xl uppercase tracking-wider text-[transparent] md-tab:text-[59px] lg-tab:text-7xl`}
+            className={`text-stroke-3 my-2 bg-hero-back bg-clip-text bg-[0_0] font-poppins text-2xl uppercase tracking-wider text-[transparent] md-mob:text-3xl sm-tab:text-5xl md-tab:my-5 md-tab:text-[59px] lg-tab:text-7xl md-des:my-3`}
           >
             mahmoud mohsen
           </h1>

@@ -11,7 +11,7 @@ function App() {
       <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
       <main>
         <Hero darkModeIsOn={darkModeIsOn} />
-        <About />
+        <About darkModeIsOn={darkModeIsOn} />
       </main>
       <footer></footer>
     </>

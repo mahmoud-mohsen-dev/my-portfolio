@@ -10,6 +10,7 @@ export type NavItemProps<T> = {
   id: T;
   active: T;
   darkModeIsOn: boolean;
+  isNavbarOnTop: boolean;
   closeNavWindow: () => void;
   setActive: setState<T>;
 };

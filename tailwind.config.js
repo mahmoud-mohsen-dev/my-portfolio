@@ -11,11 +11,16 @@ export default {
         'hero-back': "url('./assets/back-img.svg')",
       },
       gridTemplateColumns: {
+        'fit-150': 'repeat(auto-fit, minmax(150px, 1fr))',
         'fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
         'fit-300': 'repeat(auto-fit, minmax(300px, 1fr))',
         'fit-400': 'repeat(auto-fit, minmax(400px, 1fr))',
         'fit-500': 'repeat(auto-fit, minmax(500px, 1fr))',
         'fit-600': 'repeat(auto-fit, minmax(600px, 1fr))',
+        '1fr-2fr': '1fr 2fr',
+      },
+      gridTemplateRows: {
+        '1fr-2fr': '1fr 2fr',
       },
     },
     fontFamily: {

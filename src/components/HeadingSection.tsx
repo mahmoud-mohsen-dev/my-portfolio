@@ -1,9 +1,9 @@
-function HeadingSection({ sectionName }: { sectionName: string }) {
+function HeadingSection({ sectionName, className }: { sectionName: string; className?: string }) {
   return (
-    <div className="mx-auto w-fit">
-      <h3 className=" uppercase p-2 tracking-wide text-secondary font-Paytone text-6xl">{sectionName}</h3>
-      <div className="w-full h-1 bg-primary"></div>
-      <div className="mx-auto w-1/2 mt-2 h-1 bg-primary"></div>
+    <div className={`mx-auto w-fit ${className}`}>
+      <h3 className=" p-2 font-Paytone text-5xl uppercase tracking-wide text-secondary">{sectionName}</h3>
+      <div className="h-1 w-full bg-primary"></div>
+      <div className="mx-auto mt-2 h-1 w-1/2 bg-primary"></div>
     </div>
   );
 }
