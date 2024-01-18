@@ -1,9 +1,9 @@
 import { HeroProps } from '../types/myTypes';
-import coding from '../assets/coding.svg';
+import coding from '../assets/app-images/coding.svg';
 import Button from '../components/Button';
-import lines from '../assets/lines.svg';
-import blobShap from '../assets/blob-hero-section.svg';
-import circleLines from '../assets/weird-shape-hero-section.svg';
+import lines from '../assets/app-images/lines.svg';
+import blobShap from '../assets/app-images/blob-hero-section.svg';
+import circleLines from '../assets/app-images/weird-shape-hero-section.svg';
 
 function Hero({ darkModeIsOn }: HeroProps) {
   const heroStyles = darkModeIsOn ? 'bg-gray-dark text-white' : 'bg-secondary';

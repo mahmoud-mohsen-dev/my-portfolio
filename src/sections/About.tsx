@@ -1,18 +1,18 @@
 import HeadingSection from '../components/HeadingSection';
-import aboutMeImg from '../assets/about-me.svg';
-import javascriptImg from '../assets/javascript.svg';
-import cssImg from '../assets/css.svg';
-import htmlImg from '../assets/html.svg';
-import reactImg from '../assets/react.svg';
-import typescriptImg from '../assets/typesctipt.svg';
-import tailwindcss from '../assets/tailwind.svg';
-import bootstrapImg from '../assets/bootstrap.svg';
-import gitImg from '../assets/git.svg';
-import figmaImg from '../assets/figma.svg';
-import githubIMg from '../assets/github-skills-section.svg';
+import aboutMeImg from '../assets/app-images/about-me.svg';
+import javascriptImg from '../assets/app-images/javascript.svg';
+import cssImg from '../assets/app-images/css.svg';
+import htmlImg from '../assets/app-images/html.svg';
+import reactImg from '../assets/app-images/react.svg';
+import typescriptImg from '../assets/app-images/typesctipt.svg';
+import tailwindcss from '../assets/app-images/tailwind.svg';
+import bootstrapImg from '../assets/app-images/bootstrap.svg';
+import gitImg from '../assets/app-images/git.svg';
+import figmaImg from '../assets/app-images/figma.svg';
+import githubIMg from '../assets/app-images/github-skills-section.svg';
 import Skill from '../components/Skill';
 import Button from '../components/Button';
-import blobShape from '../assets/blob-about-section.svg';
+import blobShape from '../assets/app-images/blob-about-section.svg';
 // import blobAboutShape from '../assets/blob-shape-skill-section.svg';
 
 function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
@@ -22,7 +22,10 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
       <div className="container grid gap-16 pb-40 pt-10 sm-tab:pb-56 sm-des:pb-20 md-des:gap-10 md-des:grid-cols-12 lg-des:gap-8 lg-des:pb-12">
         {/* Skill Section */}
         <div className="grid gap-16  sm-des:grid-cols-1fr-2fr sm-des:gap-8 md-des:grid-cols-12 md-des:col-span-12">
-          <HeadingSection sectionName="skills" className="sm-des:col-start-2 sm-des:row-start-1 md-des:col-start-8" />
+          <HeadingSection
+            sectionName="skills"
+            className="sm-des:col-start-2 sm-des:row-start-1 md-des:col-start-8 text-white"
+          />
           <img
             src={aboutMeImg}
             alt="about-me"
@@ -44,7 +47,7 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
         {/* About Section */}
         <div className=" relative z-10 md-des:col-start-2 md-des:col-span-5">
-          <HeadingSection sectionName="about" />
+          <HeadingSection sectionName="about" className="text-white" />
           <div className=" mx-auto mt-8 max-w-[48ch] rounded-3xl bg-red-light p-6 lg-des:mt-5">
             <p className=" mb-5 text-center text-xl font-semibold text-black md-tab:text-start md-tab:text-2xl">
               I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites

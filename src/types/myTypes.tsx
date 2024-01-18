@@ -24,3 +24,18 @@ export interface ButtonProps<M> {
   children: M;
   onClick: () => void;
 }
+
+export interface AnchorProps<M> extends Omit<ButtonProps<M>, 'onClick'> {
+  href: string;
+}
+
+export interface projectType {
+  id: number;
+  imgSrc: string;
+  imgAlt: string;
+  title: string;
+  description: string;
+  tools: string[];
+  liveSrc: string;
+  codeSrc: string;
+}

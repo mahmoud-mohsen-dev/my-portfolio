@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import logoPrimary from '../assets/logo-primary.svg';
-import logoDanger from '../assets/logo-red.svg';
-import whiteSun from '../assets/sun-white.svg';
-import blackSun from '../assets/sun-black.svg';
+import logoPrimary from '../assets/app-images/logo-primary.svg';
+import logoDanger from '../assets/app-images/logo-red.svg';
+import whiteSun from '../assets/app-images/sun-white.svg';
+import blackSun from '../assets/app-images/sun-black.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
 import { NavbarProps } from '../types/myTypes';
