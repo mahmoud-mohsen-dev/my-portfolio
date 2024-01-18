@@ -30,8 +30,8 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
     navStyles = isNavbarOnTop ? 'bg-gray-dark  text-white' : ' bg-black  text-white';
     cvBtnStyles = isNavbarOnTop ? 'text-red-light' : 'text-red-light';
   } else {
-    navStyles = isNavbarOnTop ? 'bg-secondary  text-black' : ' bg-primary  text-white';
-    cvBtnStyles = isNavbarOnTop ? 'text-red-dark' : 'text-red-light';
+    navStyles = isNavbarOnTop ? 'bg-secondary  text-black' : ' bg-blue-medium  text-black';
+    cvBtnStyles = isNavbarOnTop ? 'text-red-dark' : 'text-blue-light';
   }
 
   const closeNavWindow = () => {

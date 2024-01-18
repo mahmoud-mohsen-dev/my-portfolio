@@ -2,7 +2,7 @@ import { NavItemProps } from '../types/myTypes';
 
 function NavItem({ text, id, active, darkModeIsOn, isNavbarOnTop, closeNavWindow, setActive }: NavItemProps<string>) {
   const isActive = id === active;
-  const color = isActive ? (darkModeIsOn ? 'text-blue-medium' : isNavbarOnTop ? ' text-primary' : 'text-black') : '';
+  const color = isActive ? (darkModeIsOn ? 'text-blue-medium' : isNavbarOnTop ? ' text-primary' : 'text-white') : '';
   return (
     <li>
       <a
