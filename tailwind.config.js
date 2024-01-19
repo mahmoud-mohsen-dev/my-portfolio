@@ -8,7 +8,7 @@ export default {
         buttonShadow: '0px 0px 25px 0px rgba(0, 0, 0, 0.25)',
       },
       backgroundImage: {
-        'hero-back': "url('./assets/back-img.svg')",
+        'hero-back': "url('./assets/app-images/back-img.svg')",
       },
       gridTemplateColumns: {
         'fit-150': 'repeat(auto-fit, minmax(150px, 1fr))',
