@@ -6,21 +6,22 @@ export default {
     extend: {
       boxShadow: {
         buttonShadow: '0px 0px 25px 0px rgba(0, 0, 0, 0.25)',
+        projectIdleShadow: '0 20px 50px 0 rgba(0,0,0,.45);',
+        projectHoverShadow: '0 20px 50px 0 rgba(0,0,0,.65);',
       },
       backgroundImage: {
         'hero-back': "url('./assets/app-images/back-img.svg')",
+        'mask-hover': 'linear-gradient(270deg,rgba(35,90,166,.9),rgba(16,27,59,.9))',
       },
       gridTemplateColumns: {
         'fit-150': 'repeat(auto-fit, minmax(150px, 1fr))',
-        'fit-200': 'repeat(auto-fit, minmax(200px, 1fr))',
-        'fit-300': 'repeat(auto-fit, minmax(300px, 1fr))',
-        'fit-400': 'repeat(auto-fit, minmax(400px, 1fr))',
-        'fit-500': 'repeat(auto-fit, minmax(500px, 1fr))',
-        'fit-600': 'repeat(auto-fit, minmax(600px, 1fr))',
         '1fr-2fr': '1fr 2fr',
       },
       gridTemplateRows: {
         '1fr-2fr': '1fr 2fr',
+      },
+      transitionTimingFunction: {
+        transform: 'cubic-bezier(.694,.048,.335,1)',
       },
     },
     fontFamily: {

@@ -26,9 +26,9 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
             <Skill src={gitImg} alt="GIT icon" tool="GIT" />
             <Skill src={githubIMg} alt="GitHub icon" tool="GitHub" />
             <Skill src={tailwindcss} alt="TailwindCSS icon" tool="TailwindCSS" />
-            <Skill src={reactImg} alt="React icon" tool="React" />
-            <Skill src={bootstrapImg} alt="Bootstrap icon" tool="Bootstrap" />
             <Skill src={htmlImg} alt="HTML icon" tool="HTML" />
+            <Skill src={bootstrapImg} alt="Bootstrap icon" tool="Bootstrap" />
+            <Skill src={reactImg} alt="React icon" tool="React" />
             <Skill src={figmaImg} alt="Figma icon" tool="Figma" />
           </div>
         </div>

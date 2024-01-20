@@ -4,7 +4,7 @@ import Project from '../components/Project';
 import { projectType } from '../types/myTypes';
 
 function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
-  const projectsStyles = darkModeIsOn ? '' : 'bg-blue-light';
+  const projectsStyles = darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary';
 
   const whoWillWinTheMillion: projectType = {
     id: 1,
@@ -20,10 +20,10 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   return (
     <section className={`${projectsStyles} py-12`}>
       <div className="container grid gap-16">
-        <HeadingSection sectionName="projects" className="text-black" />
-        <Project info={whoWillWinTheMillion} />
-        <Project info={{ ...whoWillWinTheMillion, id: 2 }} />
-        <Project info={{ ...whoWillWinTheMillion, id: 3 }} />
+        <HeadingSection sectionName="projects" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
+        <Project info={whoWillWinTheMillion} darkModeIsOn={darkModeIsOn} />
+        <Project info={{ ...whoWillWinTheMillion, id: 2 }} darkModeIsOn={darkModeIsOn} />
+        <Project info={{ ...whoWillWinTheMillion, id: 3 }} darkModeIsOn={darkModeIsOn} />
       </div>
     </section>
   );

@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import logoPrimary from '../assets/app-images/logo-primary.svg';
 import logoDanger from '../assets/app-images/logo-red.svg';
-import whiteSun from '../assets/app-images/sun-white.svg';
-import blackSun from '../assets/app-images/sun-black.svg';
+import sun from '../assets/app-images/sun.svg';
+import moon from '../assets/app-images/moon.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
 import { NavbarProps } from '../types/myTypes';
@@ -71,9 +71,9 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
         {/* Navbar items and cv button and darkMode button */}
         <div
-          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-4xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-2xl md-tab:duration-0 lg-tab:text-3xl ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl md-tab:text-2xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
-          <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-3 md-tab:text-xl lg-tab:text-3xl lg-tab:gap-5 md-des:gap-10">
+          <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-3 lg-tab:gap-5 md-des:gap-10">
             <NavItem
               text="home"
               id="1"
@@ -112,7 +112,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
             />
           </ul>
 
-          <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-2 lg-tab:gap-3">
+          <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-8">
             <a
               href="#cv"
               className={`rounded-full hover:scale-110 hover:transition-all hover:duration-200 active:scale-100 ${cvBtnStyles}`}
@@ -127,11 +127,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
                 closeNavWindow();
               }}
             >
-              <img
-                src={darkModeIsOn ? whiteSun : blackSun}
-                alt="dark-mode-button"
-                className={`'w-11 md-tab:w-8 md-des:w-11'`}
-              />
+              <img src={darkModeIsOn ? sun : moon} alt="dark-mode-button" className={`h-8`} />
             </button>
           </div>
         </div>

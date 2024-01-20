@@ -7,7 +7,7 @@ function NavItem({ text, id, active, darkModeIsOn, isNavbarOnTop, closeNavWindow
     <li>
       <a
         href={`#${text}`}
-        className={`uppercase  ${color}`}
+        className={`relative uppercase  ${color}`}
         onClick={() => {
           setActive(id);
           closeNavWindow();
