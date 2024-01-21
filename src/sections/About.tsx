@@ -20,7 +20,7 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites
             </p>
             <div className="flex flex-wrap justify-center items-center gap-5">
-              <Button className=" bg-red-dark" onClick={() => {}}>
+              <Button className="text-xl px-3 py-4 bg-red-dark" onClick={() => {}}>
                 Read More
               </Button>
               <Anchor className="rounded-xl bg-white px-5 py-4 !text-black" href="#cv">

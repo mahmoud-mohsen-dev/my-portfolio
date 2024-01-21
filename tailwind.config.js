@@ -23,6 +23,15 @@ export default {
       transitionTimingFunction: {
         transform: 'cubic-bezier(.694,.048,.335,1)',
       },
+      keyframes: {
+        leftToRight: {
+          '0%, 100%': { transform: 'translateX(-100%)' },
+          '10%, 90%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        leftToRight: 'leftToRight 5s ease-out both',
+      },
     },
     fontFamily: {
       mochiy: ['"Mochiy Pop One"', 'sans-serif'],

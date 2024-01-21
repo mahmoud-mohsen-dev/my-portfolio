@@ -22,6 +22,8 @@ export interface HeroProps {
 export interface ButtonProps<M> {
   className: M;
   children: M;
+  value?: M;
+  type?: 'button' | 'submit';
   onClick: () => void;
 }
 

@@ -5,6 +5,7 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Footer from './sections/Footer';
+import Contact from './sections/Contact';
 
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
@@ -17,6 +18,7 @@ function App() {
         <Skills darkModeIsOn={darkModeIsOn} />
         <About darkModeIsOn={darkModeIsOn} />
         <Projects darkModeIsOn={darkModeIsOn} />
+        <Contact />
       </main>
       <Footer />
     </>

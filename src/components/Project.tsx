@@ -5,8 +5,6 @@ function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: bool
   const { id, imgSrc, imgAlt, title, description, tools, liveSrc, codeSrc } = info;
   const [hover, setHover] = useState(false);
   const isEven = id % 2 === 0;
-  console.log(isEven);
-  console.log(id);
   return (
     <div
       className={`flex flex-col gap-5  sm-des:items-center sm-des:mx-auto sm-des:max-w-[1000px] md-des:max-w-[1300px] sm-des:gap-20 ${isEven ? 'sm-des:flex-row-reverse' : 'sm-des:flex-row'}`}

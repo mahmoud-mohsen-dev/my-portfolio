@@ -26,7 +26,10 @@ function Hero({ darkModeIsOn }: HeroProps) {
             mahmoud mohsen
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
-          <Button className={` mx-auto mt-5 block bg-primary md-des:ml-auto md-des:mr-0 `} onClick={() => {}}>
+          <Button
+            className={`px-3 py-4 text-2xl mx-auto mt-5 block bg-primary md-des:ml-auto md-des:mr-0 `}
+            onClick={() => {}}
+          >
             Projects
           </Button>
         </div>
