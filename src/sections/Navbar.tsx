@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-import logoPrimary from '../assets/app-images/logo-primary.svg';
-import logoDanger from '../assets/app-images/logo-red.svg';
 import sun from '../assets/app-images/sun.svg';
 import moon from '../assets/app-images/moon.svg';
 import { Fade as Hamburger } from 'hamburger-react';
 import NavItem from '../components/NavItem';
 import { NavbarProps } from '../types/myTypes';
+import Logo from '../components/Logo';
 function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
   const [isOpen, setOpen] = useState(false);
@@ -46,8 +45,8 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
       <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-14'}`}>
         {/* hamburger icon will be displayed on mobile screens */}
         <div className="relative z-50 flex w-full items-center justify-between ">
-          <a href="#home" className="h-full">
-            <img src={darkModeIsOn ? logoDanger : logoPrimary} alt="portfolio-logo" className="h-full" />
+          <a href="#home" className="h-full text-red-dark flex justify-center items-center ">
+            <Logo height={isNavbarOnTop ? 50 : 38} fill={darkModeIsOn ? 'rgb(207,87,84)' : 'black'} />
           </a>
           {/* hamburger Menu */}
           <div className="md-tab:hidden" id="hamburger">

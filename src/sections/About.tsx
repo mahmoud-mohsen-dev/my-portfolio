@@ -2,9 +2,10 @@ import HeadingSection from '../components/HeadingSection';
 import Button from '../components/Button';
 import blobShape from '../assets/app-images/blob-shape-skill-and-about-section.svg';
 import Anchor from '../components/Anchor';
-import githubImg from '../assets/app-images/github.svg';
-import linkedinImg from '../assets/app-images/linkedin.svg';
-import twitterImg from '../assets/app-images/twitter.svg';
+import githubIcon from '../assets/app-images/github.svg';
+import linkedinIcon from '../assets/app-images/linkedin.svg';
+import twitterIcon from '../assets/app-images/twitter.svg';
+import SocialIcon from '../components/SocialIcon';
 
 function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-blue-light';
@@ -31,30 +32,9 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
         {/* Social Icons */}
         <div className=" bg-[rgba(14,36,49,0.3)]  relative z-10 md-mob:w-80 flex justify-between p-5 rounded-3xl mx-auto mt-20 sm-des:mt-0 sm-des:place-self-end sm-des:col-start-9 sm-des:h-fit ">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://github.com/mahmoud-mohsen-dev"
-            className="hover:-translate-y-2 transition-transform ease-transform duration-100"
-          >
-            <img src={githubImg} alt="github icon" />
-          </a>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/mahmoud-mohsen-dev/"
-            className="hover:-translate-y-2 transition-transform ease-transform duration-100"
-          >
-            <img src={linkedinImg} alt="linkedin icon" />
-          </a>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            href="https://twitter.com/mahmoud_codes"
-            className="hover:-translate-y-2 transition-transform ease-transform duration-100"
-          >
-            <img src={twitterImg} alt="twitter icon" />
-          </a>
+          <SocialIcon href="https://twitter.com/mahmoud_codes" src={twitterIcon} alt="twitter icon" />
+          <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
+          <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
         </div>
 
         <img

@@ -4,6 +4,7 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Skills from './sections/Skills';
+import Footer from './sections/Footer';
 
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
@@ -17,7 +18,7 @@ function App() {
         <About darkModeIsOn={darkModeIsOn} />
         <Projects darkModeIsOn={darkModeIsOn} />
       </main>
-      <footer></footer>
+      <Footer />
     </>
   );
 }
