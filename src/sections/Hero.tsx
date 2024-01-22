@@ -1,6 +1,6 @@
 import { HeroProps } from '../types/myTypes';
 import coding from '../assets/app-images/coding.svg';
-import Button from '../components/Button';
+import Anchor from '../components/Anchor';
 import lines from '../assets/app-images/lines.svg';
 import blobShap from '../assets/app-images/blob-hero-section.svg';
 import circleLines from '../assets/app-images/weird-shape-hero-section.svg';
@@ -26,12 +26,13 @@ function Hero({ darkModeIsOn }: HeroProps) {
             mahmoud mohsen
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
-          <Button
-            className={`px-3 py-4 text-2xl mx-auto mt-5 block bg-primary md-des:ml-auto md-des:mr-0 `}
-            onClick={() => {}}
+          <Anchor
+            className={`px-4 py-4 !text-2xl mx-auto mt-5 rounded-xl !block w-fit bg-primary md-des:ml-auto md-des:mr-0 `}
+            href="#projects"
+            blank={false}
           >
             Projects
-          </Button>
+          </Anchor>
         </div>
       </div>
 

@@ -30,6 +30,7 @@ export interface ButtonProps<M> {
 
 export interface AnchorProps<M> extends Omit<ButtonProps<M>, 'onClick'> {
   href: string;
+  blank?: boolean;
 }
 
 export interface projectType {

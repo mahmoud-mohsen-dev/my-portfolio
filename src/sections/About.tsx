@@ -24,7 +24,7 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               <Modal />
               {/* <ModalButton /> */}
               <Anchor
-                className="rounded-xl bg-white px-3 py-4 !text-black"
+                className="rounded-xl bg-white px-3 py-4 !text-black text-xl"
                 href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
               >
                 View CV

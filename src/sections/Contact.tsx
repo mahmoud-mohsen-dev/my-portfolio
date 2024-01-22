@@ -1,4 +1,4 @@
-import HeadingSection from '../components/HeadingSection';
+// import HeadingSection from '../components/HeadingSection';
 import mailBox from '../assets/app-images/mailbox.svg';
 import Button from '../components/Button';
 import { useRef, useState } from 'react';
@@ -32,10 +32,10 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   };
 
   return (
-    <section className={` pt-8 py-16 ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`} id="contact">
+    <section className={` py-[56px] ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`} id="contact">
       <PopUp showPopUp={showPopUp} setShow={setShowPopUp} />
       <div className="container">
-        <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} />
+        {/* <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} /> */}
         <div className="flex justify-center items-center gap-32 ">
           {/* Form */}
           {showPopUp.success || showPopUp.isSubmited ? (
