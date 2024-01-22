@@ -45,7 +45,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
       <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-14'}`}>
         {/* hamburger icon will be displayed on mobile screens */}
         <div className="relative z-50 flex w-full items-center justify-between ">
-          <a href="#home" className="h-full text-red-dark flex justify-center items-center ">
+          <a href="#home" className="flex h-full items-center justify-center text-red-dark ">
             <Logo height={isNavbarOnTop ? 50 : 38} fill={darkModeIsOn ? 'rgb(207,87,84)' : 'black'} />
           </a>
           {/* hamburger Menu */}
@@ -70,7 +70,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
         {/* Navbar items and cv button and darkMode button */}
         <div
-          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl md-tab:text-2xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-2xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
           <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-3 lg-tab:gap-5 md-des:gap-10">
             <NavItem
@@ -128,7 +128,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
                 closeNavWindow();
               }}
             >
-              <img src={darkModeIsOn ? sun : moon} alt="dark-mode-button" className={`h-8`} />
+              <img src={darkModeIsOn ? sun : moon} alt="dark-mode-button" className={` h-7`} />
             </button>
           </div>
         </div>

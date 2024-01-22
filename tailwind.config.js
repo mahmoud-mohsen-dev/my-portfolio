@@ -23,6 +23,20 @@ export default {
       transitionTimingFunction: {
         transform: 'cubic-bezier(.694,.048,.335,1)',
       },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 400ms ease-out 280ms both',
+        fadeOut: 'fadeOut 250ms ease-out both',
+      },
     },
     fontFamily: {
       mochiy: ['"Mochiy Pop One"', 'sans-serif'],

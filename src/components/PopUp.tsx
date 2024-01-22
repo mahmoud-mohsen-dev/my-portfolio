@@ -9,7 +9,7 @@ function PopUp({ showPopUp, setShow }: PopUpProps) {
   const popUpStyles = showPopUp.success ? successStyles : showPopUp.failed ? dangerStyless : '';
   return (
     <div
-      className={`mb-3 inline-flex items-center rounded-lg font-poppins text-lg pl-6 pr-3 py-5 fixed top-20 z-40 left-0 duration-300 ease-out ${showPopUp.success || showPopUp.failed ? 'translate-x-0' : '-translate-x-full'} ${popUpStyles}`}
+      className={`fixed left-0 top-20 z-40 mb-3 inline-flex items-center rounded-lg py-5 pl-6 pr-3 font-poppins text-lg duration-300 ease-out ${showPopUp.success || showPopUp.failed ? 'translate-x-0' : '-translate-x-full'} ${popUpStyles}`}
       role="alert"
     >
       <span className="mr-2">

@@ -36,14 +36,14 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
       <PopUp showPopUp={showPopUp} setShow={setShowPopUp} />
       <div className="container">
         {/* <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} /> */}
-        <div className="flex justify-center items-center gap-32 ">
+        <div className="flex items-center justify-center gap-32 ">
           {/* Form */}
           {showPopUp.success || showPopUp.isSubmited ? (
-            <h3 className="text-3xl font-mochiy">Thank you 😊</h3>
+            <h3 className="font-mochiy text-3xl">Thank you 😊</h3>
           ) : (
-            <form className="bg-black flex flex-col p-6 gap-5 rounded-[50px] w-[500px]" onSubmit={sendEmail} ref={form}>
-              <h3 className="text-white font-titan text-3xl text-center">Send me a message</h3>
-              <div className="flex justify-between gap-y-5 gap-x-5">
+            <form className="flex w-[500px] flex-col gap-5 rounded-[50px] bg-black p-6" onSubmit={sendEmail} ref={form}>
+              <h3 className="text-center font-titan text-3xl text-white">Send me a message</h3>
+              <div className="flex justify-between gap-x-5 gap-y-5">
                 <input
                   type="text"
                   name="user_name"
@@ -62,7 +62,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               <textarea rows={5} name="message" className={`${inputSyles}`} placeholder="Message" required></textarea>
 
               <Button
-                className="bg-primary font-titan w-fit mx-auto px-10 py-3 text-3xl"
+                className="mx-auto w-fit bg-primary px-10 py-3 font-titan text-3xl"
                 value="Send"
                 type="submit"
                 disabled={isLoading}

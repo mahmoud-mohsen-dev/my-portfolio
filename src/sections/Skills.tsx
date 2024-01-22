@@ -19,7 +19,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
       <div className="container py-8 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         <div className="sm-des:col-span-8">
           <HeadingSection sectionName="skills" className="text-white" />
-          <div className="grid grid-cols-fit-150 gap-x-2 gap-y-5 mt-10">
+          <div className="mt-10 grid grid-cols-fit-150 gap-x-2 gap-y-5">
             <Skill src={javascriptImg} alt="javascript icon" tool="JavaScript" />
             <Skill src={cssImg} alt="CSS icon" tool="CSS" />
             <Skill src={typescriptImg} alt="TypeScript icon" tool="TypeScript" />
@@ -36,7 +36,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         <img
           src={aboutMeImg}
           alt="about-me"
-          className="mx-auto mt-10 sm-des:col-span-4 sm-des:col-start-9 self-center"
+          className="mx-auto mt-10 self-center sm-des:col-span-4 sm-des:col-start-9"
         />
       </div>
     </section>

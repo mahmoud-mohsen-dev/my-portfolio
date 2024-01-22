@@ -8,7 +8,7 @@ export default function VerticalyCentered(): JSX.Element {
     <div>
       {/* Button trigger vertically centered scrollable modal */}
       <Button
-        className="text-xl px-3 py-4 bg-red-dark"
+        className="bg-red-dark px-3 py-4 text-xl"
         onClick={() => {
           setShowVerticalyCenteredScrollModal(true);
         }}
@@ -21,13 +21,13 @@ export default function VerticalyCentered(): JSX.Element {
         show={showVerticalyCenteredScrollModal}
         setShow={setShowVerticalyCenteredScrollModal}
         scrollable
-        className=" overflow-hidden"
+        className=" "
       >
-        <TEModalDialog centered>
-          <TEModalContent>
-            <TEModalHeader>
+        <TEModalDialog centered className="">
+          <TEModalContent className="">
+            <TEModalHeader className="">
               {/* Modal title */}
-              <h5 className={`text-2xl font-medium leading-normal text-gray-dark px-2 font-Paytone tracking-wide`}>
+              <h5 className={`px-2 font-Paytone text-2xl font-medium leading-normal tracking-wide text-gray-dark`}>
                 About Me
               </h5>
               {/* Close button */}
@@ -50,21 +50,21 @@ export default function VerticalyCentered(): JSX.Element {
               </button>
             </TEModalHeader>
             {/* Modal body */}
-            <TEModalBody>
-              <p className=" text-lg px-2 font-semibold">I graduated with computer science degree in 2022.</p>
+            <TEModalBody className="">
+              <p className=" px-2 text-lg font-semibold">I graduated with computer science degree in 2022.</p>
               <br />
-              <p className=" text-lg px-2 font-semibold">
+              <p className=" px-2 text-lg font-semibold">
                 My love for technology started at a young age when I got my first computer. I always wondered how it
                 worked inside, which prompted my unstoppable desire to feed myself with information about each of its
                 components.
               </p>
               <br />
-              <p className=" text-lg px-2 font-semibold">
+              <p className=" px-2 text-lg font-semibold">
                 {' '}
                 I really felt like I had superpowers when I ran my first “Hello World”.
               </p>
               <br />
-              <p className=" text-lg px-2 font-semibold pb-5">
+              <p className=" px-2 pb-5 text-lg font-semibold">
                 Fast forward to today, and here I am, still learning something new every day as I look for new
                 challenges to grow in knowledge and experience.
               </p>

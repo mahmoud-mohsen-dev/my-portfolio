@@ -2,7 +2,7 @@ import HeadingSection from '../components/HeadingSection';
 import whoWillWinTheMillionImg from '../assets/projects-images/who-will-win-the-million.png';
 import Project from '../components/Project';
 import { projectType } from '../types/myTypes';
-
+import projectsData from '../data/projects.json';
 function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const projectsStyles = darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary';
 
@@ -17,8 +17,13 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
     codeSrc: 'https://github.com/mahmoud-mohsen-dev/who-will-win-the-million',
   };
 
+  // const projectOne = JSON.parse(projectsData);
+  console.log(projectsData);
+
+  // "imgSrc": "/assets/who-will-win-the-million.png",
+
   return (
-    <section className={`${projectsStyles} pt-8 py-20`} id="projects">
+    <section className={`${projectsStyles} py-20 pt-8`} id="projects">
       <div className="container grid gap-16">
         <HeadingSection sectionName="projects" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
         <Project info={whoWillWinTheMillion} darkModeIsOn={darkModeIsOn} />
