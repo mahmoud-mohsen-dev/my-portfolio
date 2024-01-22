@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "imgSrc": "./src/assets/projects-images/who-will-win-the-million.png",
+    "imgSrc": "./projects-images/who-will-win-the-million.png",
     "imgAlt": "who will win the million quiz game",
     "title": "who will win the million",
     "description": "An interactive web-based quiz game inspired by the popular TV show 'Who Wants to Be a Millionaire.'",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "imgSrc": "./src/assets/projects-images/social-media-app.png",
+    "imgSrc": "./projects-images/social-media-app.png",
     "imgAlt": "socail app",
     "title": "social app",
     "description": "social media platform to connect with other people, Seamlessly create, update, and delete posts with ease.",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "imgSrc": "./src/assets/projects-images/filter-app.png",
+    "imgSrc": "./projects-images/filter-app.png",
     "imgAlt": "Filter Shoe App",
     "title": "TrendFoot",
     "description": "Smart filters, vibrant color choices, and top-brand selections make shoe shopping a breeze.",
@@ -35,7 +35,7 @@
 
   {
     "id": 4,
-    "imgSrc": "./src/assets/projects-images/portfolio.png",
+    "imgSrc": "./projects-images/portfolio.png",
     "imgAlt": "mahmoud mohsen portfolio",
     "title": "My Portfolio",
     "description": "Digital Portfolio: Uncover a spectrum of my work",
