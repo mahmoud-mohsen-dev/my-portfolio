@@ -4,6 +4,7 @@ import lines from '../assets/app-images/lines.svg';
 import blobShap from '../assets/app-images/blob-hero-section.svg';
 import circleLines from '../assets/app-images/weird-shape-hero-section.svg';
 
+// eslint-disable-next-line import/named
 import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import animationData from '../data/person-smiling-animation.json';
 import { useRef } from 'react';
@@ -21,14 +22,10 @@ function Hero({ darkModeIsOn }: HeroProps) {
           animationData={animationData}
           lottieRef={personRef}
           onComplete={() => {
-            console.log('complete');
             personRef.current?.setDirection(-1);
             personRef.current?.play();
             personRef.current?.setSpeed(0.5);
             personRef.current?.playSegments([10, 45], false);
-          }}
-          onDOMLoaded={() => {
-            personRef.current?.setSpeed(0.7);
           }}
           loop={false}
           className="col-span-12 col-start-1 row-span-6 w-full row-start-3 md-des:col-span-8 md-des:col-start-6 md-des:ml-20 md-des:row-span-8 md-des:row-start-1 lg-des:col-span-7 lg-des:col-start-6 lg-des:ml-32 lg-des:row-span-11 lg-des:row-start-1"

@@ -42,6 +42,7 @@ export interface projectType {
   tools: string[];
   liveSrc: string;
   codeSrc: string;
+  order: number;
 }
 
 export interface popUpType {
