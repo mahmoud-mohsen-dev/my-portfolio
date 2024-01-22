@@ -1,11 +1,11 @@
 type setState<T> = React.Dispatch<React.SetStateAction<T>>;
 
-export type NavbarProps<T> = {
+export interface NavbarProps<T> {
   darkModeIsOn: T;
   setDarkModeIsOn: setState<T>;
-};
+}
 
-export type NavItemProps<T> = {
+export interface NavItemProps<T> {
   text: string;
   id: T;
   active: T;
@@ -13,7 +13,7 @@ export type NavItemProps<T> = {
   isNavbarOnTop: boolean;
   closeNavWindow: () => void;
   setActive: setState<T>;
-};
+}
 
 export interface HeroProps {
   darkModeIsOn: boolean;
@@ -21,8 +21,9 @@ export interface HeroProps {
 
 export interface ButtonProps<M> {
   className: M;
-  children: M;
+  children: React.ReactNode;
   value?: M;
+  disabled?: boolean;
   type?: 'button' | 'submit';
   onClick: () => void;
 }
@@ -40,4 +41,15 @@ export interface projectType {
   tools: string[];
   liveSrc: string;
   codeSrc: string;
+}
+
+export interface popUpType {
+  success: boolean;
+  failed: boolean;
+  isSubmited: boolean;
+}
+
+export interface PopUpProps {
+  showPopUp: popUpType;
+  setShow: React.Dispatch<React.SetStateAction<popUpType>>;
 }

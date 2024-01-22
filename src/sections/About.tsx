@@ -1,29 +1,32 @@
 import HeadingSection from '../components/HeadingSection';
-import Button from '../components/Button';
 import blobShape from '../assets/app-images/blob-shape-skill-and-about-section.svg';
 import Anchor from '../components/Anchor';
 import githubIcon from '../assets/app-images/github.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
 import twitterIcon from '../assets/app-images/twitter.svg';
 import SocialIcon from '../components/SocialIcon';
+import Modal from '../components/Modal';
 
 function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-blue-light';
   return (
-    <section className={`${aboutStyles} relative overflow-hidden`}>
-      <div className="container py-10 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+    <section className={`${aboutStyles} relative overflow-hidden`} id="about">
+      <div className="container  pt-8 py-10 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         {/* About section */}
-        <div className="relative z-10 sm-des:col-span-8">
+        <div className=" sm-des:col-span-8">
           <HeadingSection sectionName="about" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
           <div className=" mx-auto mt-8 max-w-[48ch] rounded-3xl bg-red-light p-6">
             <p className=" mb-5 text-center text-xl font-semibold text-black">
               I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites
             </p>
             <div className="flex flex-wrap justify-center items-center gap-5">
-              <Button className="text-xl px-3 py-4 bg-red-dark" onClick={() => {}}>
-                Read More
-              </Button>
-              <Anchor className="rounded-xl bg-white px-5 py-4 !text-black" href="#cv">
+              {/* modal */}
+              <Modal />
+              {/* <ModalButton /> */}
+              <Anchor
+                className="rounded-xl bg-white px-3 py-4 !text-black"
+                href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
+              >
                 View CV
               </Anchor>
             </div>

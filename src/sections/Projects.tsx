@@ -18,7 +18,7 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   };
 
   return (
-    <section className={`${projectsStyles} pt-12 py-20`}>
+    <section className={`${projectsStyles} pt-8 py-20`} id="projects">
       <div className="container grid gap-16">
         <HeadingSection sectionName="projects" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
         <Project info={whoWillWinTheMillion} darkModeIsOn={darkModeIsOn} />

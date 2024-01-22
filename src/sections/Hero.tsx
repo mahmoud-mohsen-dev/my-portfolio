@@ -10,7 +10,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
 
   return (
-    <section className={`relative z-10 h-screen overflow-hidden py-20 ${heroStyles}`}>
+    <section className={`relative z-10 h-screen overflow-hidden py-20 ${heroStyles}`} id="home">
       {/* Hero section content */}
       <div className="container h-full grid-cols-12 grid-rows-12 md-tab:grid ">
         <img

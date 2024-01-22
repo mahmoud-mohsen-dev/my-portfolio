@@ -25,6 +25,11 @@
   background-color: var(--secondary);
   /* border: 3px solid var(--primary); */
 }
+
+html {
+  scroll-padding-top: 3.5rem;
+}
+
 #hamburger .hamburger-react {
   transition-property: transform !important;
 }

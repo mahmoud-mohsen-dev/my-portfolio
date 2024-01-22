@@ -18,7 +18,7 @@ function App() {
         <Skills darkModeIsOn={darkModeIsOn} />
         <About darkModeIsOn={darkModeIsOn} />
         <Projects darkModeIsOn={darkModeIsOn} />
-        <Contact />
+        <Contact darkModeIsOn={darkModeIsOn} />
       </main>
       <Footer />
     </>
