@@ -6,7 +6,10 @@ import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 import Footer from './sections/Footer';
 import Contact from './sections/Contact';
-// import { SpeedInsights } from '@vercel/speed-insights/react';
+// eslint-disable-next-line import/no-unresolved
+import { SpeedInsights } from '@vercel/speed-insights/react';
+// eslint-disable-next-line import/no-unresolved
+import { Analytics } from '@vercel/analytics/react';
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
 
@@ -21,7 +24,8 @@ function App() {
         <Contact darkModeIsOn={darkModeIsOn} />
       </main>
       <Footer />
-      {/* <SpeedInsights /> */}
+      <SpeedInsights />
+      <Analytics />
     </>
   );
 }
