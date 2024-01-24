@@ -1,7 +1,7 @@
 import { NavItemProps } from '../types/myTypes';
 
-function NavItem({ text, id, active, darkModeIsOn, isNavbarOnTop, closeNavWindow, setActive }: NavItemProps<string>) {
-  const isActive = id === active;
+function NavItem({ text, active, darkModeIsOn, isNavbarOnTop, closeNavWindow, setActive }: NavItemProps<string>) {
+  const isActive = text === active;
   const color = isActive ? (darkModeIsOn ? 'text-blue-medium' : isNavbarOnTop ? ' text-primary' : 'text-white') : '';
   return (
     <li>
@@ -9,7 +9,7 @@ function NavItem({ text, id, active, darkModeIsOn, isNavbarOnTop, closeNavWindow
         href={`#${text}`}
         className={`relative uppercase  ${color}`}
         onClick={() => {
-          setActive(id);
+          setActive(text);
           closeNavWindow();
         }}
       >
