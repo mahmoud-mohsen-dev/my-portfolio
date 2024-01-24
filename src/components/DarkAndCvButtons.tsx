@@ -1,17 +1,8 @@
 import sun from '../assets/app-images/sun.svg';
 import moon from '../assets/app-images/moon.svg';
+import { DarkAndCvButtonsProps } from '../types/myTypes';
 
-function DarkAndCvButtons({
-  cvBtnStyles,
-  closeNavWindow,
-  darkModeIsOn,
-  setDarkModeIsOn,
-}: {
-  cvBtnStyles: string;
-  closeNavWindow: () => void;
-  darkModeIsOn: boolean;
-  setDarkModeIsOn: React.Dispatch<React.SetStateAction<boolean>>;
-}) {
+function DarkAndCvButtons({ cvBtnStyles, closeNavWindow, darkModeIsOn, setDarkModeIsOn }: DarkAndCvButtonsProps) {
   return (
     <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-8">
       <a

@@ -56,3 +56,10 @@ export interface PopUpProps {
   showPopUp: popUpType;
   setShow: React.Dispatch<React.SetStateAction<popUpType>>;
 }
+
+export interface DarkAndCvButtonsProps {
+  cvBtnStyles: string;
+  closeNavWindow: () => void;
+  darkModeIsOn: boolean;
+  setDarkModeIsOn: React.Dispatch<React.SetStateAction<boolean>>;
+}
