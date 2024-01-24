@@ -15,9 +15,12 @@ function Hero({ darkModeIsOn }: HeroProps) {
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
 
   return (
-    <section className={`relative z-10 sm-des:h-screen overflow-hidden py-20 ${heroStyles}`} id="home">
+    <section
+      className={`relative z-10 overflow-hidden py-20 min-h-screen flex flex-col justify-center md-des:h-screen ${heroStyles}`}
+      id="home"
+    >
       {/* Hero section content */}
-      <div className="container h-full grid-cols-12 grid-rows-12 sm-des:grid ">
+      <div className="container h-full grid-cols-12 grid-rows-12 md-des:grid ">
         <Lottie
           animationData={animationData}
           lottieRef={personRef}
@@ -28,10 +31,10 @@ function Hero({ darkModeIsOn }: HeroProps) {
             personRef.current?.playSegments([10, 45], false);
           }}
           loop={false}
-          className="col-span-12 relative z-[1] col-start-1 row-span-6 w-full row-start-3 md-des:col-span-8 md-des:col-start-6 md-des:ml-20 md-des:row-span-8 md-des:row-start-1 lg-des:col-span-7 lg-des:col-start-6 lg-des:ml-32 lg-des:row-span-11 lg-des:row-start-1"
+          className="relative z-[1] w-full md-des:col-span-8 md-des:col-start-6 md-des:row-span-10 md-des:row-start-1 md-des:ml-20 lg-des:col-span-7 lg-des:col-start-6 lg-des:row-span-11 lg-des:row-start-1 lg-des:ml-32"
         />
 
-        <div className=" col-span-12 col-start-1 z-[2] row-start-8 mt-4 text-center font-poppins text-xl font-bold tracking-wide sm-tab:text-3xl md-tab:m-auto md-tab:max-w-fit md-tab:text-left md-tab:text-4xl sm-des:row-start-9 md-des:row-start-7 md-des:ml-16">
+        <div className="relative z-[2] col-span-12 col-start-1 row-start-8 mt-4 text-center font-poppins text-xl font-bold tracking-wide sm-tab:text-3xl md-tab:m-auto md-tab:max-w-fit md-tab:text-left md-tab:text-4xl sm-des:row-start-9 md-des:row-start-7 md-des:ml-16">
           <h2 className="capitalize">hi, i&rsquo;m</h2>
           <h1
             className={`text-stroke-3 my-2 bg-hero-back bg-clip-text bg-[0_0] font-poppins text-2xl uppercase tracking-wider text-[transparent] md-mob:text-3xl sm-tab:text-4xl md-tab:my-5 md-tab:text-[59px] lg-tab:text-6xl md-des:my-3 lg-des:text-7xl`}

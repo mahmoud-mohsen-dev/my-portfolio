@@ -48,7 +48,7 @@ function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: bool
           style={{ perspective: '200px' }}
         >
           <div
-            className={`h-full text-7xl font-extrabold transition-transform delay-200 duration-300 text-white ease-transform lg-tab:text-9xl ${hover ? ' animate-fadeIn' : 'animate-fadeOut'}`}
+            className={`h-full text-7xl font-extrabold text-white transition-transform delay-200 duration-300 ease-transform lg-tab:text-9xl ${hover ? ' animate-fadeIn' : 'animate-fadeOut'}`}
             style={{
               textShadow: '5px 5px 11px rgba(74,74,74,.5)',
               transform: hover ? 'translate3d(0,0,0)' : 'translate3d(0,100%,0)',
