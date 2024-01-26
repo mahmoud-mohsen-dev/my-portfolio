@@ -8,13 +8,13 @@ import SocialIcon from '../components/SocialIcon';
 import Modal from '../components/Modal';
 
 function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
-  const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-blue-light';
+  const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
-    <section className={`${aboutStyles} relative overflow-hidden`} id="about">
+    <section className={`${aboutStyles} relative overflow-hidden`}>
       <div className="container  py-10 pt-8 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         {/* About section */}
         <div className=" sm-des:col-span-8">
-          <HeadingSection sectionName="about" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
+          <HeadingSection sectionName="about" className={`text-white`} />
           <div className=" relative z-10 mx-auto mt-8 max-w-[48ch] rounded-3xl bg-red-light p-6">
             <p className=" mb-5 text-center text-xl font-semibold text-black">
               I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites

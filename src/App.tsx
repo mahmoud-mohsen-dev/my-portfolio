@@ -14,8 +14,10 @@ function App() {
       <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
       <main>
         <Hero darkModeIsOn={darkModeIsOn} />
-        <Skills darkModeIsOn={darkModeIsOn} />
-        <About darkModeIsOn={darkModeIsOn} />
+        <div id="about" data-section>
+          <Skills darkModeIsOn={darkModeIsOn} />
+          <About darkModeIsOn={darkModeIsOn} />
+        </div>
         <Projects darkModeIsOn={darkModeIsOn} />
         <Contact darkModeIsOn={darkModeIsOn} />
       </main>

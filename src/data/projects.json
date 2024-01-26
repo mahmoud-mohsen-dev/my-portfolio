@@ -13,7 +13,7 @@
   {
     "id": 2,
     "imgSrc": "./projects-images/social-media-app.png",
-    "imgAlt": "socail app",
+    "imgAlt": "social app",
     "title": "social app",
     "description": "social media platform to connect with other people, Seamlessly create, update, and delete posts with ease.",
     "tools": ["JavaScript", "Bootstrap", "Axios", "Postman"],

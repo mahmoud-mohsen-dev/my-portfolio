@@ -73,7 +73,7 @@ function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: bool
         </p>
 
         <div className="mt-4 flex flex-wrap gap-4 text-center sm-des:text-start">
-          <Anchor className=" bg-red-dark px-5 py-3" href={liveSrc}>
+          <Anchor className=" bg-red-dark text-lg px-5 py-3" href={liveSrc}>
             View Demo
           </Anchor>
           <Anchor className={`px-5 py-3 ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`} href={codeSrc}>

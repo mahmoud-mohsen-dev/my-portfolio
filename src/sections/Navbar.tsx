@@ -24,11 +24,11 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   let navStyles;
   let cvBtnStyles;
   if (darkModeIsOn) {
-    navStyles = isNavbarOnTop ? 'bg-gray-dark  text-white' : ' bg-black  text-white';
+    navStyles = isNavbarOnTop ? 'bg-gray-dark' : ' bg-black  ';
     cvBtnStyles = isNavbarOnTop ? 'text-red-light' : 'text-red-light';
   } else {
-    navStyles = isNavbarOnTop ? 'bg-secondary  text-black' : ' bg-blue-medium  text-black';
-    cvBtnStyles = isNavbarOnTop ? 'text-red-dark' : 'text-blue-light';
+    navStyles = isNavbarOnTop ? 'bg-secondary ' : ' bg-blue-300';
+    cvBtnStyles = isNavbarOnTop ? 'text-red-dark' : 'text-white';
   }
 
   const closeNavWindow = () => {
@@ -40,7 +40,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
   return (
     <header className={`${navStyles} fixed top-0 z-50 w-full `}>
-      <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-14'}`}>
+      <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-[58px]'}`}>
         {/* hamburger icon will be displayed on mobile screens */}
         <div className="relative z-50 flex w-full items-center justify-between ">
           <a href="#home" className="flex h-full items-center justify-center text-red-dark ">
@@ -68,9 +68,9 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
         {/* Navbar items and cv button and darkMode button */}
         <div
-          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-2xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-sm lg-tab:text-lg md-des:text-2xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
-          <Tabs darkModeIsOn={darkModeIsOn} isNavbarOnTop={isNavbarOnTop} closeNavWindow={closeNavWindow} />
+          <Tabs darkModeIsOn={darkModeIsOn} closeNavWindow={closeNavWindow} />
           <DarkAndCvButtons
             cvBtnStyles={cvBtnStyles}
             closeNavWindow={closeNavWindow}

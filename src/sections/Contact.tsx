@@ -32,7 +32,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   };
 
   return (
-    <section className={` py-[56px] ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`} id="contact">
+    <section className={` py-[56px] ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`} id="contact" data-section>
       <PopUp showPopUp={showPopUp} setShow={setShowPopUp} />
       <div className="container">
         {/* <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} /> */}

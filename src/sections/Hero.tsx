@@ -18,6 +18,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
     <section
       className={`relative z-10 overflow-hidden py-20 min-h-screen flex flex-col justify-center md-des:h-screen ${heroStyles}`}
       id="home"
+      data-section
     >
       {/* Hero section content */}
       <div className="container h-full grid-cols-12 grid-rows-12 md-des:grid ">
@@ -43,7 +44,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
           <Anchor
-            className={`mx-auto mt-5 !block w-fit rounded-xl bg-primary px-4 py-4 !text-2xl md-des:ml-auto md-des:mr-0 `}
+            className={`mx-auto mt-5 !block w-fit rounded-xl bg-gradient-to-r from-primary to-blue-600 px-4 py-4 !text-2xl md-des:ml-auto md-des:mr-0 `}
             href="#projects"
             blank={false}
           >

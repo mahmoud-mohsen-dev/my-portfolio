@@ -7,14 +7,15 @@ export interface NavbarProps<T> {
 
 export interface NavItemProps<T> {
   text: T;
-  active: T;
+  activeTab: T;
   darkModeIsOn: boolean;
-  isNavbarOnTop: boolean;
-  closeNavWindow: () => void;
-  setActive: setState<T>;
+  onHandleClicked: () => void;
 }
 
-export interface TabsProps<T> extends Omit<NavItemProps<T>, 'text' | 'active' | 'setActive'> {}
+export interface TabsProps<T> {
+  darkModeIsOn: T;
+  closeNavWindow: setState<T>;
+}
 
 export interface HeroProps {
   darkModeIsOn: boolean;
