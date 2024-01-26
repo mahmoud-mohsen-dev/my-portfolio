@@ -1,6 +1,5 @@
-import sun from '../assets/app-images/sun.svg';
-import moon from '../assets/app-images/moon.svg';
 import { DarkAndCvButtonsProps } from '../types/myTypes';
+import ToggleDayNightButton from './ToggleDayNightButton';
 
 function DarkAndCvButtons({ cvBtnStyles, closeNavWindow, darkModeIsOn, setDarkModeIsOn }: DarkAndCvButtonsProps) {
   return (
@@ -14,15 +13,7 @@ function DarkAndCvButtons({ cvBtnStyles, closeNavWindow, darkModeIsOn, setDarkMo
       >
         CV
       </a>
-
-      <button
-        onClick={() => {
-          setDarkModeIsOn((prev: boolean) => !prev);
-          closeNavWindow();
-        }}
-      >
-        <img src={darkModeIsOn ? sun : moon} alt="dark-mode-button" className={` h-7`} />
-      </button>
+      <ToggleDayNightButton darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
     </div>
   );
 }

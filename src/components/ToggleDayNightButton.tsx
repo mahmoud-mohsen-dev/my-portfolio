@@ -12,7 +12,7 @@ function ToggleDayNightButton({
     setDarkModeIsOn((prev) => !prev);
   };
   return (
-    <div className="">
+    <div>
       <Toggle toggled={darkModeIsOn} onClick={handleToggled} />
     </div>
   );
