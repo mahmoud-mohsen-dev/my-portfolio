@@ -8,10 +8,10 @@ function Tabs({ darkModeIsOn, closeNavWindow }: TabsProps<boolean>) {
   const [activeTab, setActiveTab] = useState(tabs[0]);
   const [clickedTab, setClickedTab] = useState('');
   const [scrolledSection, setSrcolledSection] = useState('');
-  const sectionsRef = useRef<NodeListOf<Element> | null>(null);
+  const sectionsRef = useRef<HTMLElement[] | null>(null);
 
   useEffect(() => {
-    sectionsRef.current = document.querySelectorAll('[data-section]');
+    sectionsRef.current = Array.from(document.querySelectorAll('[data-section]') as NodeListOf<HTMLElement>);
     const handleScroll = () => {
       const scollY = window.scrollY;
       let newActiveSection = '';
