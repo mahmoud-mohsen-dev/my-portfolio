@@ -3,8 +3,9 @@ import Project from '../components/Project';
 
 function ProjectsSection({ darkModeIsOn, projectsData }: projectsSectionProps) {
   const filteredAndSortedProjects = projectsData
-    .sort((a, b) => a.order - b.order)
-    .filter((project: projectType) => typeof project.order === 'number');
+    .filter((project: projectType) => typeof project.order === 'number' && project.order > 0)
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
+
   const dontHasOrderNumber = projectsData.filter((item) => typeof item.order !== 'number');
   const result = [...filteredAndSortedProjects, ...dontHasOrderNumber];
   return (

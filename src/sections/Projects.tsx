@@ -8,7 +8,7 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const projectsStyles = darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary';
 
   const filteredAndSortedProjects = projectsData
-    .filter((project: projectType) => project.order > 0)
+    .filter((project: projectType) => typeof project.order === 'number')
     .sort((a, b) => a.order - b.order);
 
   return (
