@@ -5,6 +5,7 @@ import { useRef, useState } from 'react';
 import { sendForm } from '@emailjs/browser';
 import PopUp from '../components/PopUp';
 import { popUpType } from '../types/myTypes';
+import { useLocation } from 'react-router-dom';
 
 function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const form = useRef<null | HTMLFormElement>(null);
@@ -31,8 +32,15 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
     }
   };
 
+  const location = useLocation();
+  const path = location.pathname.split('/')[1];
+  console.log(path);
   return (
-    <section className={` py-[56px] ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`} id="contact" data-section>
+    <section
+      className={` ${path === '' ? 'py-[56px]' : 'min-h-screen grid place-items-center pt-10'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
+      id="contact"
+      data-section
+    >
       <PopUp showPopUp={showPopUp} setShow={setShowPopUp} />
       <div className="container">
         {/* <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} /> */}

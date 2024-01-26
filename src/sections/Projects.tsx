@@ -3,6 +3,7 @@ import Project from '../components/Project';
 import { projectType } from '../types/myTypes';
 import projectsData from '../data/projects.json';
 import Button from '../components/Button';
+import { Link } from 'react-router-dom';
 function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const projectsStyles = darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary';
 
@@ -20,9 +21,11 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
           return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.id + i} />;
         })}
 
-        <Button className=" mx-auto px-6 py-4 !rounded-md text-xl mt-2 bg-primary" onClick={() => {}}>
-          See All Projects
-        </Button>
+        <Link to="projects" className="mx-auto">
+          <Button className=" mx-auto px-6 py-4 !rounded-md text-xl bg-primary" onClick={() => {}}>
+            See All Projects
+          </Button>
+        </Link>
       </div>
     </section>
   );

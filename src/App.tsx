@@ -1,28 +1,25 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
-import Navbar from './sections/Navbar';
-import Hero from './sections/Hero';
-import About from './sections/About';
-import Projects from './sections/Projects';
-import Skills from './sections/Skills';
-import Footer from './sections/Footer';
+import PageNotFound from './pages/PageNotFound';
+import HomePage from './pages/HomePage';
+import HomeMain from './routes/HomeMain';
+import ProjectsMain from './routes/ProjectsMain';
+import ChallengesMain from './routes/ChallengesMain';
 import Contact from './sections/Contact';
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
-
   return (
-    <>
-      <Navbar darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />
-      <main>
-        <Hero darkModeIsOn={darkModeIsOn} />
-        <div id="about" data-section>
-          <Skills darkModeIsOn={darkModeIsOn} />
-          <About darkModeIsOn={darkModeIsOn} />
-        </div>
-        <Projects darkModeIsOn={darkModeIsOn} />
-        <Contact darkModeIsOn={darkModeIsOn} />
-      </main>
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/" element={<HomePage darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />}>
+          <Route path="/" element={<HomeMain darkModeIsOn={darkModeIsOn} />} />
+          <Route path="projects" element={<ProjectsMain darkModeIsOn={darkModeIsOn} />} />
+          <Route path="challenges" element={<ChallengesMain darkModeIsOn={darkModeIsOn} />} />
+          <Route path="contact" element={<Contact darkModeIsOn={darkModeIsOn} />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

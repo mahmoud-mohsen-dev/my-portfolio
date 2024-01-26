@@ -4,6 +4,8 @@ import { NavbarProps } from '../types/myTypes';
 import Logo from '../components/Logo';
 import DarkAndCvButtons from '../components/DarkAndCvButtons';
 import Tabs from '../components/Tabs';
+import { Link, useLocation } from 'react-router-dom';
+import NotHomeTabs from '../components/NotHomeTabs';
 
 function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
@@ -12,6 +14,10 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
   // Is Navbar on top of the hero section
   const [isNavbarOnTop, setIsNavbarOnTop] = useState(true);
+
+  // get Current Location path
+  const location = useLocation();
+  const path = location.pathname;
 
   // listen to every scroll event and set isNavbarOnTop
   useEffect(() => {
@@ -42,9 +48,15 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
       <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-[58px]'}`}>
         {/* hamburger icon will be displayed on mobile screens */}
         <div className="relative z-50 flex w-full items-center justify-between ">
-          <a href="#home" className="flex h-full items-center justify-center text-red-dark ">
-            <Logo height={isNavbarOnTop ? 50 : 38} fill={darkModeIsOn ? 'rgb(207,87,84)' : 'black'} />
-          </a>
+          {path === '/' ? (
+            <a href="#home">
+              <Logo height={isNavbarOnTop ? 50 : 38} fill={darkModeIsOn ? 'rgb(207,87,84)' : 'black'} />
+            </a>
+          ) : (
+            <Link to="/">
+              <Logo height={isNavbarOnTop ? 50 : 38} fill={darkModeIsOn ? 'rgb(207,87,84)' : 'black'} />
+            </Link>
+          )}
           {/* hamburger Menu */}
           <div className="md-tab:hidden" id="hamburger">
             <Hamburger
@@ -69,7 +81,11 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
         <div
           className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-sm lg-tab:text-lg md-des:text-2xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
-          <Tabs darkModeIsOn={darkModeIsOn} closeNavWindow={closeNavWindow} />
+          {path === '/' ? (
+            <Tabs darkModeIsOn={darkModeIsOn} closeNavWindow={closeNavWindow} />
+          ) : (
+            <NotHomeTabs darkModeIsOn={darkModeIsOn} closeNavWindow={closeNavWindow} />
+          )}
           <DarkAndCvButtons
             cvBtnStyles={cvBtnStyles}
             closeNavWindow={closeNavWindow}

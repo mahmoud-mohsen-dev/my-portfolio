@@ -60,7 +60,7 @@ function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: bool
       </a>
 
       {/* project Description */}
-      <div className="">
+      <div>
         <h3
           className={`font-titan text-2xl capitalize tracking-wide md-des:text-4xl ${darkModeIsOn ? 'text-white' : 'text-black'}`}
         >

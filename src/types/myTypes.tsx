@@ -1,7 +1,10 @@
 export type setState<T> = React.Dispatch<React.SetStateAction<T>>;
 
-export interface NavbarProps<T> {
-  darkModeIsOn: T;
+export interface darkModeIsOnType {
+  darkModeIsOn: boolean;
+}
+
+export interface NavbarProps<T> extends darkModeIsOnType {
   setDarkModeIsOn: setState<T>;
 }
 
@@ -64,3 +67,5 @@ export interface DarkAndCvButtonsProps {
   darkModeIsOn: boolean;
   setDarkModeIsOn: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export type projectsSectionProps = darkModeIsOnType & { projectsData: projectType[] };
