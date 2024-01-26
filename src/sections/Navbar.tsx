@@ -26,7 +26,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
     navStyles = isNavbarOnTop ? 'bg-gray-dark' : ' bg-black  ';
     cvBtnStyles = isNavbarOnTop ? 'text-red-light' : 'text-red-light';
   } else {
-    navStyles = isNavbarOnTop ? 'bg-secondary ' : ' bg-blue-300';
+    navStyles = isNavbarOnTop ? 'bg-secondary ' : ' bg-blue-400';
     cvBtnStyles = isNavbarOnTop ? 'text-red-dark' : 'text-white';
   }
 
@@ -38,7 +38,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   };
 
   return (
-    <header className={`${navStyles} fixed top-0 z-50 w-full `}>
+    <header className={`fixed top-0 z-50 w-full ${navStyles}  ${isNavbarOnTop ? '' : 'shadow-md'}`}>
       <nav className={`container flex transition-all duration-300 ${isNavbarOnTop ? 'h-20' : 'h-[58px]'}`}>
         {/* hamburger icon will be displayed on mobile screens */}
         <div className="relative z-50 flex w-full items-center justify-between ">
