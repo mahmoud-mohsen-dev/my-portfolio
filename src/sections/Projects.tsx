@@ -10,7 +10,6 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const filteredAndSortedProjects = projectsData
     .filter((project: projectType) => project.order > 0)
     .sort((a, b) => a.order - b.order);
-  // console.log(filteredAndSortedProjects);
 
   return (
     <section className={`${projectsStyles} py-16 pt-8`} id="projects" data-section>

@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import NavItem from './NavItem';
 import { TabsProps } from '../types/myTypes';
 import { useState } from 'react';
@@ -19,14 +19,13 @@ function NotHomeTabs({ darkModeIsOn, closeNavWindow }: TabsProps<boolean>) {
     <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-2 sm-des:gap-5 md-des:gap-5">
       {tabs.map((text) => {
         return (
-          <NavLink to={text === 'home' ? '/' : text} key={text}>
-            <NavItem
-              text={text}
-              activeTab={activeTab}
-              darkModeIsOn={darkModeIsOn}
-              onHandleClicked={() => handleClickedTab(text)}
-            />
-          </NavLink>
+          <NavItem
+            text={text}
+            activeTab={activeTab}
+            darkModeIsOn={darkModeIsOn}
+            onHandleClicked={() => handleClickedTab(text)}
+            key={text}
+          />
         );
       })}
     </ul>

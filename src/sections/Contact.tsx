@@ -34,7 +34,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
   const location = useLocation();
   const path = location.pathname.split('/')[1];
-  console.log(path);
+
   return (
     <section
       className={` ${path === '' ? 'py-[56px]' : 'min-h-screen grid place-items-center pt-10'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
