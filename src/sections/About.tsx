@@ -15,9 +15,9 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         {/* About section */}
         <div className=" sm-des:col-span-8">
           <HeadingSection sectionName="about" className={`text-white`} />
-          <div className=" relative z-10 mx-auto mt-8 max-w-[48ch] rounded-3xl bg-red-light p-6">
-            <p className=" mb-5 text-center text-xl font-semibold text-black">
-              I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites
+          <div className=" relative z-10 mx-auto mt-8 max-w-[60ch] rounded-3xl bg-red-light p-6">
+            <p className=" mb-5 text-center text-3xl font-semibold text-black">
+              I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* modal */}

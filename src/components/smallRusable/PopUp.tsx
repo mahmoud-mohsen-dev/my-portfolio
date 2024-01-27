@@ -7,6 +7,7 @@ function PopUp({ showPopUp, setShow }: PopUpProps) {
   const failedMessage = 'Something went wrong.';
   const message = showPopUp.success ? successMessage : showPopUp.failed ? failedMessage : '';
   const popUpStyles = showPopUp.success ? successStyles : showPopUp.failed ? dangerStyless : '';
+
   return (
     <div
       className={`fixed left-0 top-20 z-40 mb-3 inline-flex items-center rounded-lg py-5 pl-6 pr-3 font-poppins text-lg duration-300 ease-out ${showPopUp.success || showPopUp.failed ? 'translate-x-0' : '-translate-x-full'} ${popUpStyles}`}
