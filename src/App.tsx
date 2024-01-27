@@ -6,7 +6,7 @@ import HomeMain from './routes/HomeMain';
 import ProjectsMain from './routes/ProjectsMain';
 import ChallengesMain from './routes/ChallengesMain';
 import Contact from './sections/Contact';
-import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/smallRusable/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);

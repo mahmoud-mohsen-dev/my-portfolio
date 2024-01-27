@@ -1,15 +1,15 @@
-import HeadingSection from '../components/HeadingSection';
-import Project from '../components/Project';
+import HeadingSection from '../components/smallRusable/HeadingSection';
+import Project from '../components/smallRusable/Project';
 import { projectType } from '../types/myTypes';
 import projectsData from '../data/projects.json';
-import Button from '../components/Button';
+import Button from '../components/buttons/Button';
 import { Link } from 'react-router-dom';
 function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const projectsStyles = darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary';
 
   const filteredAndSortedProjects = projectsData
     .filter((project: projectType) => typeof project.order === 'number')
-    .sort((a, b) => a.order - b.order);
+    .sort((a, b) => (a.order || 0) - (b.order || 0));
 
   return (
     <section className={`${projectsStyles} py-16 pt-8`} id="projects" data-section>
@@ -17,7 +17,7 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         <HeadingSection sectionName="projects" className={`${darkModeIsOn ? 'text-white' : 'text-black'}`} />
 
         {filteredAndSortedProjects.map((project, i) => {
-          return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.id + i} />;
+          return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.description + i} index={i} />;
         })}
 
         <Link to="projects" className="mx-auto">

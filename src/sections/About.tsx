@@ -1,11 +1,11 @@
-import HeadingSection from '../components/HeadingSection';
+import HeadingSection from '../components/smallRusable/HeadingSection';
 import blobShape from '../assets/app-images/blob-shape-skill-and-about-section.svg';
-import Anchor from '../components/Anchor';
+import Anchor from '../components/buttons/Anchor';
 import githubIcon from '../assets/app-images/github.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
 import twitterIcon from '../assets/app-images/twitter.svg';
-import SocialIcon from '../components/SocialIcon';
-import Modal from '../components/Modal';
+import SocialIcon from '../components/smallRusable/SocialIcon';
+import Modal from '../components/smallRusable/Modal';
 
 function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';

@@ -1,5 +1,5 @@
 import { HeroProps } from '../types/myTypes';
-import Anchor from '../components/Anchor';
+import Anchor from '../components/buttons/Anchor';
 import lines from '../assets/app-images/lines.svg';
 import blobShap from '../assets/app-images/blob-hero-section.svg';
 import circleLines from '../assets/app-images/weird-shape-hero-section.svg';

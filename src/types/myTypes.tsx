@@ -39,7 +39,6 @@ export interface AnchorProps<M> extends Omit<ButtonProps<M>, 'onClick'> {
 }
 
 export interface projectType {
-  id: number;
   imgSrc: string;
   imgAlt: string;
   title: string;

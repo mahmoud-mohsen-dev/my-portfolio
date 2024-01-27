@@ -1,9 +1,9 @@
 // import HeadingSection from '../components/HeadingSection';
 import mailBox from '../assets/app-images/mailbox.svg';
-import Button from '../components/Button';
+import Button from '../components/buttons/Button';
 import { useRef, useState } from 'react';
 import { sendForm } from '@emailjs/browser';
-import PopUp from '../components/PopUp';
+import PopUp from '../components/smallRusable/PopUp';
 import { popUpType } from '../types/myTypes';
 import { useLocation } from 'react-router-dom';
 

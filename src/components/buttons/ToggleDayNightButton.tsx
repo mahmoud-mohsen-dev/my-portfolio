@@ -1,4 +1,4 @@
-import { setState } from '../types/myTypes';
+import { setState } from '../../types/myTypes';
 import Toggle from './Toggle';
 
 function ToggleDayNightButton({

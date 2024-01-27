@@ -1,5 +1,5 @@
-import NavItem from '../components/NavItem';
-import { TabsProps } from '../types/myTypes';
+import NavItem from './NavItem';
+import { TabsProps } from '../../types/myTypes';
 import { useEffect, useState, useRef } from 'react';
 
 const tabs = ['home', 'about', 'projects', 'contact'];

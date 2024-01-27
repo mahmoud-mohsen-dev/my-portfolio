@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import Anchor from '../components/Anchor';
+import Anchor from '../components/buttons/Anchor';
 
 function PageNotFound() {
   return (

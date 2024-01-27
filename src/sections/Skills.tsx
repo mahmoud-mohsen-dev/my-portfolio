@@ -1,4 +1,4 @@
-import HeadingSection from '../components/HeadingSection';
+import HeadingSection from '../components/smallRusable/HeadingSection';
 import aboutMeImg from '../assets/app-images/about-me.svg';
 import javascriptImg from '../assets/app-images/javascript.svg';
 import cssImg from '../assets/app-images/css.svg';
@@ -10,7 +10,7 @@ import bootstrapImg from '../assets/app-images/bootstrap.svg';
 import gitImg from '../assets/app-images/git.svg';
 import figmaImg from '../assets/app-images/figma.svg';
 import githubIMg from '../assets/app-images/github-skills-section.svg';
-import Skill from '../components/Skill';
+import Skill from '../components/smallRusable/Skill';
 
 function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const skillsStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';

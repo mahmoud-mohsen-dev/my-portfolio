@@ -1,4 +1,4 @@
-import { PopUpProps } from '../types/myTypes';
+import { PopUpProps } from '../../types/myTypes';
 
 function PopUp({ showPopUp, setShow }: PopUpProps) {
   const successStyles = 'bg-[rgb(214,250,228)] text-[rgb(14,117,55)]';

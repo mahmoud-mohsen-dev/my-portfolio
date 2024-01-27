@@ -1,10 +1,11 @@
-import { projectType } from '../types/myTypes';
-import Anchor from './Anchor';
+import { projectType } from '../../types/myTypes';
+import Anchor from '../buttons/Anchor';
 import { useState } from 'react';
-function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: boolean }) {
-  const { id, imgSrc, imgAlt, title, description, tools, liveSrc, codeSrc } = info;
+function Project({ info, darkModeIsOn, index }: { info: projectType; darkModeIsOn: boolean; index: number }) {
+  const { imgSrc, imgAlt, title, description, tools, liveSrc, codeSrc } = info;
   const [hover, setHover] = useState(false);
-  const isEven = id % 2 === 0;
+  const countId = index + 1;
+  const isEven = countId % 2 === 0;
   return (
     <div
       className={`flex flex-col gap-5  sm-des:mx-auto sm-des:max-w-[1000px] sm-des:items-center sm-des:gap-20 md-des:max-w-[1300px] ${isEven ? 'sm-des:flex-row-reverse' : 'sm-des:flex-row'}`}
@@ -54,7 +55,7 @@ function Project({ info, darkModeIsOn }: { info: projectType; darkModeIsOn: bool
               transform: hover ? 'translate3d(0,0,0)' : 'translate3d(0,100%,0)',
             }}
           >
-            0{id}
+            {countId <= 9 ? `0${countId}` : countId}
           </div>
         </div>
       </a>

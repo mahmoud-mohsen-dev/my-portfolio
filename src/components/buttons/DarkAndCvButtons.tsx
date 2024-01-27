@@ -1,9 +1,9 @@
-import { DarkAndCvButtonsProps } from '../types/myTypes';
+import { DarkAndCvButtonsProps } from '../../types/myTypes';
 import ToggleDayNightButton from './ToggleDayNightButton';
 
 function DarkAndCvButtons({ cvBtnStyles, closeNavWindow, darkModeIsOn, setDarkModeIsOn }: DarkAndCvButtonsProps) {
   return (
-    <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-40 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-8">
+    <div className="flex w-full flex-wrap items-center justify-center gap-10 md-tab:max-w-0 md-tab:flex-row md-tab:flex-nowrap md-tab:justify-end md-tab:gap-4 md-des:gap-8">
       <a
         target="_blank"
         rel="noreferrer"

@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 import { Fade as Hamburger } from 'hamburger-react';
 import { NavbarProps } from '../types/myTypes';
-import Logo from '../components/Logo';
-import DarkAndCvButtons from '../components/DarkAndCvButtons';
-import Tabs from '../components/Tabs';
+import Logo from '../components/navbar/Logo';
+import DarkAndCvButtons from '../components/buttons/DarkAndCvButtons';
+import Tabs from '../components/navbar/Tabs';
 import { Link, useLocation } from 'react-router-dom';
-import NotHomeTabs from '../components/NotHomeTabs';
+import NotHomeTabs from '../components/navbar/NotHomeTabs';
 
 function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
@@ -79,7 +79,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
 
         {/* Navbar items and cv button and darkMode button */}
         <div
-          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-sm lg-tab:text-lg md-des:text-2xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
+          className={`fixed top-0 z-10 flex h-screen w-full max-w-lg flex-col items-center justify-evenly pt-10 font-poppins text-3xl font-semibold tracking-wide transition-[left] duration-300 md-tab:static md-tab:z-50 md-tab:h-full md-tab:max-w-none md-tab:flex-row md-tab:justify-end md-tab:p-0 md-tab:text-sm lg-tab:text-lg md-des:text-xl md-tab:duration-0 ${navStyles}  ${openNav ? ' left-0' : '-left-full'}`}
         >
           {path === '/' ? (
             <Tabs darkModeIsOn={darkModeIsOn} closeNavWindow={closeNavWindow} />

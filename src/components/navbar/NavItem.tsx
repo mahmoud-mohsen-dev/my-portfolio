@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { NavItemProps } from '../types/myTypes';
+import { NavItemProps } from '../../types/myTypes';
 import { Link, useLocation } from 'react-router-dom';
 function NavItem({ text, activeTab, darkModeIsOn, onHandleClicked }: NavItemProps<string>) {
   const isActive = text === activeTab;
@@ -22,7 +22,7 @@ function NavItem({ text, activeTab, darkModeIsOn, onHandleClicked }: NavItemProp
       {path === '' ? (
         <a
           href={`#${text}`}
-          className={` uppercase transition-colors duration-200 px-3.5 py-1 rounded-md relative ${styles}`}
+          className={`block uppercase transition-colors duration-200 px-3.5 py-1 rounded-md relative ${styles}`}
           onClick={onHandleClicked}
         >
           <span className="relative z-10">{text}</span>
@@ -37,7 +37,7 @@ function NavItem({ text, activeTab, darkModeIsOn, onHandleClicked }: NavItemProp
       ) : (
         <Link
           to={text === 'home' ? '/' : text}
-          className={` uppercase transition-colors duration-200 px-3.5 py-1 rounded-md relative ${styles}`}
+          className={`block uppercase transition-colors duration-200 px-3.5 py-1 rounded-md relative ${styles}`}
           onClick={onHandleClicked}
         >
           <span className="relative z-10">{text}</span>

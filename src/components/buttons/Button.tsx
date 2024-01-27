@@ -1,4 +1,4 @@
-import { ButtonProps } from '../types/myTypes';
+import { ButtonProps } from '../../types/myTypes';
 
 function Button({ className, children, value, type = 'button', onClick }: ButtonProps<string>) {
   return (

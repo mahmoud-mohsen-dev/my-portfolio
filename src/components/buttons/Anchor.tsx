@@ -1,4 +1,4 @@
-import { AnchorProps } from '../types/myTypes';
+import { AnchorProps } from '../../types/myTypes';
 
 function Anchor({ className, children, blank = true, href }: AnchorProps<string>) {
   return (

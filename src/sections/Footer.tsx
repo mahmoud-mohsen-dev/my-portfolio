@@ -1,8 +1,8 @@
-import Logo from '../components/Logo';
+import Logo from '../components/navbar/Logo';
 import twitterIcon from '../assets/app-images/twitter.svg';
 import githubIcon from '../assets/app-images/github.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
-import SocialIcon from '../components/SocialIcon';
+import SocialIcon from '../components/smallRusable/SocialIcon';
 import { Link, useLocation } from 'react-router-dom';
 
 function Footer() {

@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "imgSrc": "./projects-images/who-will-win-the-million.png",
     "imgAlt": "who will win the million quiz game",
     "title": "who will win the million",
@@ -11,7 +10,6 @@
     "order": 1
   },
   {
-    "id": 2,
     "imgSrc": "./projects-images/social-media-app.png",
     "imgAlt": "social app",
     "title": "social app",
@@ -22,7 +20,6 @@
     "order": 2
   },
   {
-    "id": 3,
     "imgSrc": "./projects-images/filter-app.png",
     "imgAlt": "Filter Shoe App",
     "title": "TrendFoot",
@@ -34,7 +31,6 @@
   },
 
   {
-    "id": 4,
     "imgSrc": "./projects-images/portfolio.png",
     "imgAlt": "mahmoud mohsen portfolio",
     "title": "My Portfolio",
@@ -42,6 +38,6 @@
     "tools": ["React", "TailwindCSS", "TypeScript"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/portfolio/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/portfolio",
-    "order": 4
+    "order": null
   }
 ]

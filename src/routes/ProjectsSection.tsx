@@ -1,5 +1,5 @@
 import { projectsSectionProps, projectType } from '../types/myTypes';
-import Project from '../components/Project';
+import Project from '../components/smallRusable/Project';
 
 function ProjectsSection({ darkModeIsOn, projectsData }: projectsSectionProps) {
   const filteredAndSortedProjects = projectsData
@@ -12,7 +12,7 @@ function ProjectsSection({ darkModeIsOn, projectsData }: projectsSectionProps) {
     <section className={`pt-32 py-24 min-h-screen ${darkModeIsOn ? 'bg-gray-dark' : 'bg-secondary'}`}>
       <div className="container grid gap-16">
         {result.map((project, i) => {
-          return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.id + i} />;
+          return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.description + i} index={i} />;
         })}
       </div>
     </section>

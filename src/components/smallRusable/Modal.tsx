@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { TEModal, TEModalDialog, TEModalContent, TEModalHeader, TEModalBody } from 'tw-elements-react';
-import Button from './Button';
+import Button from '../buttons/Button';
 
 export default function VerticalyCentered(): JSX.Element {
   const [showVerticalyCenteredScrollModal, setShowVerticalyCenteredScrollModal] = useState(false);
