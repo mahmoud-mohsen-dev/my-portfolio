@@ -12,7 +12,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const [showPopUp, setShowPopUp] = useState<popUpType>({ success: false, failed: false, isSubmited: false });
   const [isLoading, setIsLoading] = useState(false);
   const inputSyles =
-    ' w-full p-3 placeholder:text-black text-lg font-semibold placeholder:text-lg placeholder:font-poppins placeholder:font-semibold rounded-[10px] bg-secondary font-poppins focus:outline-primary outline-4 outline-offset-3 outline';
+    ' w-full p-3 placeholder:text-black text-lg font-semibold placeholder:text-lg placeholder:font-poppins placeholder:font-semibold rounded-md bg-secondary font-poppins focus:outline-primary outline-[3px] outline-offset-3 outline';
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -49,24 +49,22 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
           {showPopUp.success || showPopUp.isSubmited ? (
             <h3 className="font-mochiy text-3xl">Thank you 😊</h3>
           ) : (
-            <form className="flex w-[500px] flex-col gap-5 rounded-[50px] bg-black p-6" onSubmit={sendEmail} ref={form}>
-              <h3 className="text-center font-titan text-3xl text-white">Send me a message</h3>
-              <div className="flex justify-between gap-x-5 gap-y-5">
-                <input
-                  type="text"
-                  name="user_name"
-                  placeholder="Name"
-                  className={`${inputSyles} basis-1/2 leading-none`}
-                  required
-                />
-                <input
-                  type="email"
-                  name="user_email"
-                  placeholder="Email"
-                  className={`${inputSyles} basis-1/2 leading-none`}
-                  required
-                />
-              </div>
+            <form className="flex w-[500px] flex-col gap-6 rounded-2xl bg-black p-8" onSubmit={sendEmail} ref={form}>
+              <h3 className="text-center font-titan text-3xl text-white mb-2">Send me a message</h3>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Name"
+                className={`${inputSyles}  leading-none`}
+                required
+              />
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email"
+                className={`${inputSyles} basis-1/2 leading-none`}
+                required
+              />
               <textarea rows={5} name="message" className={`${inputSyles}`} placeholder="Message" required></textarea>
 
               <Button

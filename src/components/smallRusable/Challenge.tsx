@@ -1,11 +1,18 @@
 import { challengeType } from '../../types/myTypes';
 import Anchor from '../buttons/Anchor';
+import { motion } from 'framer-motion';
 function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: boolean }) {
   const { imgSrc, imgAlt, title, description, tools, liveSrc, codeSrc } = info;
   return (
-    <div className={`p-8 rounded-xl ${darkModeIsOn ? ' bg-gray-700' : 'bg-blue-100 '}`}>
-      <img src={imgSrc} alt={imgAlt} className="rounded-lg" />
-      <ul className=" flex flex-wrap gap-x-1 gap-y-1 mt-5 mb-2">
+    <div className={`p-4 py-6 rounded-xl ${darkModeIsOn ? ' bg-gray-700' : 'bg-blue-50 '}`}>
+      <motion.a className="overflow-hidden block rounded-xl " href={liveSrc}>
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          className="transition-transform ease-transform duration-300 hover:rotate-6 hover:scale-125"
+        />
+      </motion.a>
+      <ul className=" flex flex-wrap gap-x-2 gap-y-1 mt-5 mb-2">
         {tools.map((item, i) => (
           <li
             className={`font-poppins text-red-medium text-sm border-red-medium px-1 border rounded-sm`}
@@ -28,7 +35,7 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
           {description}
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-4 justify-center">
+        <div className="mt-4 flex flex-wrap gap-6 justify-center md-des:justify-start">
           <Anchor className=" bg-red-dark text-lg px-5 py-3" href={liveSrc}>
             View Demo
           </Anchor>

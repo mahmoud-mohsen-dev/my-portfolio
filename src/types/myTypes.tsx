@@ -69,4 +69,4 @@ export interface DarkAndCvButtonsProps {
   setDarkModeIsOn: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export type projectsSectionProps = darkModeIsOnType & { projectsData: projectType[] };
+export type projectsSectionProps = darkModeIsOnType & { projectsData: projectType[]; isChallenge: boolean };
