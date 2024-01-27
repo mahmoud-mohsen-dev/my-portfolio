@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import HeadingSection from '../components/smallRusable/HeadingSection';
 import challengesData from '../data/challenges.json';
+import Challenge from '../components/smallRusable/Challenge';
 
 function Challenges({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const filtered = challengesData.filter((item) => typeof item.order === 'number' && item.order > 0);
@@ -15,10 +16,14 @@ function Challenges({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   return (
     <div className={`py-10 ${darkModeIsOn ? 'bg-black' : 'bg-gray-dark'}`} id="challenges">
       <HeadingSection sectionName="Challenges" className={`text-white`} />
-      <div></div>
+      <div className="container mt-10 grid grid-cols-fit-450 gap-x-12 gap-y-16">
+        {onlySix.map((challenge) => {
+          return <Challenge info={challenge} darkModeIsOn={darkModeIsOn} key={challenge.description} />;
+        })}
+      </div>
       <Link
         to="/challenges"
-        className="mx-auto block w-fit text-white font-normal bg-red-dark py-3 px-5 text-xl rounded-md mt-10 cursor-pointer font-titan tracking-wide shadow-buttonShadow transition-all  active:scale-90 hover:md-tab:scale-110 md-tab:active:scale-90 "
+        className="mx-auto block w-fit text-white font-normal bg-primary py-3 px-5 text-xl rounded-md mt-16 my-10 cursor-pointer font-titan tracking-wide shadow-buttonShadow transition-all  active:scale-90 hover:md-tab:scale-110 md-tab:active:scale-90 "
       >
         see all challenges
       </Link>

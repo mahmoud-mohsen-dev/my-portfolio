@@ -49,6 +49,8 @@ export interface projectType {
   order: number | null;
 }
 
+export interface challengeType extends projectType {}
+
 export interface popUpType {
   success: boolean;
   failed: boolean;

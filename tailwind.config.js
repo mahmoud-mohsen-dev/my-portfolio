@@ -15,6 +15,7 @@ export default {
       },
       gridTemplateColumns: {
         'fit-150': 'repeat(auto-fit, minmax(150px, 1fr))',
+        'fit-450': 'repeat(auto-fit, minmax(350px, 1fr))',
         '1fr-2fr': '1fr 2fr',
       },
       gridTemplateRows: {
