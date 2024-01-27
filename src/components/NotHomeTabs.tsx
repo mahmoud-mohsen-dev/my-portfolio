@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import NavItem from './NavItem';
 import { TabsProps } from '../types/myTypes';
 import { useState } from 'react';
-
+import { motion } from 'framer-motion';
 const tabs = ['home', 'projects', 'challenges', 'contact'];
 
 function NotHomeTabs({ darkModeIsOn, closeNavWindow }: TabsProps<boolean>) {
@@ -16,7 +16,7 @@ function NotHomeTabs({ darkModeIsOn, closeNavWindow }: TabsProps<boolean>) {
   };
 
   return (
-    <ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-2 sm-des:gap-5 md-des:gap-5">
+    <motion.ul className=" flex basis-1/2 flex-col justify-between text-center md-tab:absolute md-tab:left-1/2 md-tab:-translate-x-1/2 md-tab:flex-row md-tab:gap-2 sm-des:gap-5 md-des:gap-5">
       {tabs.map((text) => {
         return (
           <NavItem
@@ -28,7 +28,7 @@ function NotHomeTabs({ darkModeIsOn, closeNavWindow }: TabsProps<boolean>) {
           />
         );
       })}
-    </ul>
+    </motion.ul>
   );
 }
 export default NotHomeTabs;

@@ -4,15 +4,11 @@ import githubIcon from '../assets/app-images/github.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
 import SocialIcon from '../components/SocialIcon';
 import { Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
 
 function Footer() {
   const location = useLocation();
   const path = location.pathname;
-  // Automatically scrolls to top whenever pathname changes
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [path]);
+
   return (
     <footer className="flex flex-col place-items-center gap-5 bg-black py-5">
       {path === '/' ? (

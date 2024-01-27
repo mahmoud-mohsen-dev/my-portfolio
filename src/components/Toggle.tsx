@@ -10,7 +10,13 @@ function Toggle({ toggled, onClick }: { toggled: boolean; onClick: () => void })
     ? 'bg-slate-200 shadow-[0_0_5px_white] left-[45px] '
     : 'bg-yellow-200 shadow-[0_0_5px_#fef08a] left-[5px] ';
   return (
-    <button onClick={onClick} data-toggled={toggled} className={`relative h-10 w-[80px] rounded-full ${toggleStyles}`}>
+    <motion.button
+      layout
+      layoutRoot
+      onClick={onClick}
+      data-toggled={toggled}
+      className={`relative h-10 w-[80px] rounded-full ${toggleStyles}`}
+    >
       <motion.div
         layout
         transition={{
@@ -29,7 +35,7 @@ function Toggle({ toggled, onClick }: { toggled: boolean; onClick: () => void })
         <Shape size="md" toggled={toggled} />
         <Shape size="lg" toggled={toggled} />
       </div>
-    </button>
+    </motion.button>
   );
 }
 

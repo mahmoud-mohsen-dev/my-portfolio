@@ -28,7 +28,7 @@ function NavItem({ text, activeTab, darkModeIsOn, onHandleClicked }: NavItemProp
           <span className="relative z-10">{text}</span>
           {isActive && (
             <motion.span
-              layoutId="pill-tab"
+              layoutId="tab"
               transition={{ type: 'spring', duration: 0.5 }}
               className="absolute inset-0 z-0 bg-gradient-to-r from-primary to-blue-600 rounded-md"
             ></motion.span>
