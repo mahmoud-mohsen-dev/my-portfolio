@@ -45,13 +45,13 @@ function Hero({ darkModeIsOn }: HeroProps) {
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
           <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-des:justify-end">
             <Anchor
-              className="rounded-xl bg-white px-4 py-4 text-2xl !text-black block w-fit"
+              className="rounded-md bg-white px-4 py-4 text-2xl text-black block w-fit"
               href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
             >
               View CV
             </Anchor>
             <Anchor
-              className={`block w-fit rounded-xl bg-gradient-to-r from-primary to-blue-600 px-4 py-4 text-2xl text-white `}
+              className={`block w-fit rounded-md bg-gradient-to-r from-primary to-blue-600 px-4 py-4 text-2xl text-white `}
               href="#projects"
               blank={false}
             >

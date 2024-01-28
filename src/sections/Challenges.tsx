@@ -16,7 +16,7 @@ function Challenges({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   return (
     <div className={`py-10 ${darkModeIsOn ? 'bg-black' : 'bg-gray-dark'}`}>
       <HeadingSection sectionName="Challenges" className={`text-white`} />
-      <div className="container mt-10 grid grid-cols-fit-450 gap-x-12 gap-y-16">
+      <div className="container mt-10 grid md-mob:grid-cols-fit-450 gap-x-12 gap-y-16">
         {onlySix.map((challenge, i) => {
           return <Challenge info={challenge} darkModeIsOn={darkModeIsOn} key={challenge.description + i} />;
         })}
