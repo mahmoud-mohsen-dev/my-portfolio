@@ -43,13 +43,21 @@ function Hero({ darkModeIsOn }: HeroProps) {
             mahmoud mohsen
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
-          <Anchor
-            className={`mx-auto mt-5 !block w-fit rounded-xl bg-gradient-to-r from-primary to-blue-600 px-4 py-4 !text-2xl md-des:ml-auto md-des:mr-0 `}
-            href="#projects"
-            blank={false}
-          >
-            Projects
-          </Anchor>
+          <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-des:justify-end">
+            <Anchor
+              className="rounded-xl bg-white px-4 py-4 text-2xl !text-black block w-fit"
+              href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
+            >
+              View CV
+            </Anchor>
+            <Anchor
+              className={`block w-fit rounded-xl bg-gradient-to-r from-primary to-blue-600 px-4 py-4 text-2xl text-white `}
+              href="#projects"
+              blank={false}
+            >
+              Projects
+            </Anchor>
+          </div>
         </div>
       </div>
 

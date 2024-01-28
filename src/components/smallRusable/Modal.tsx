@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { TEModal, TEModalDialog, TEModalContent, TEModalHeader, TEModalBody } from 'tw-elements-react';
 import Button from '../buttons/Button';
+import Anchor from '../buttons/Anchor';
 
 export default function VerticalyCentered(): JSX.Element {
   const [showVerticalyCenteredScrollModal, setShowVerticalyCenteredScrollModal] = useState(false);
@@ -8,7 +9,7 @@ export default function VerticalyCentered(): JSX.Element {
     <div>
       {/* Button trigger vertically centered scrollable modal */}
       <Button
-        className="bg-red-dark px-3 py-4 text-xl"
+        className="bg-red-dark px-3 py-4 text-xl rounded-md text-white"
         onClick={() => {
           setShowVerticalyCenteredScrollModal(true);
         }}
@@ -68,6 +69,12 @@ export default function VerticalyCentered(): JSX.Element {
                 Fast forward to today, and here I am, still learning something new every day as I look for new
                 challenges to grow in knowledge and experience.
               </p>
+              <Anchor
+                className="rounded-lg bg-red-dark px-3 py-4 text-xl mx-auto my-2 block w-fit"
+                href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
+              >
+                View CV
+              </Anchor>
             </TEModalBody>
           </TEModalContent>
         </TEModalDialog>

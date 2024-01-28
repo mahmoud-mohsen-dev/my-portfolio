@@ -73,12 +73,12 @@ function Project({ info, darkModeIsOn, index }: { info: projectType; darkModeIsO
           {description}
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-4 text-center sm-des:text-start">
+        <div className="mt-4 flex flex-wrap gap-4 text-center text-white sm-des:text-start">
           <Anchor className=" bg-red-dark text-lg px-5 py-3 rounded" href={liveSrc}>
             View Demo
           </Anchor>
           <Anchor
-            className={`text-lg px-5 py-3 rounded ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`}
+            className={`text-lg px-5 py-3 rounded text-white ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`}
             href={codeSrc}
           >
             Source Code

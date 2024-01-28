@@ -68,7 +68,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               <textarea rows={5} name="message" className={`${inputSyles}`} placeholder="Message" required></textarea>
 
               <Button
-                className="mx-auto w-fit bg-primary px-10 py-3 font-titan text-3xl"
+                className="mx-auto w-fit bg-primary px-10 py-3 font-titan text-3xl rounded-md text-white"
                 value="Send"
                 type="submit"
                 disabled={isLoading}

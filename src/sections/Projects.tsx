@@ -21,7 +21,7 @@ function Projects({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         })}
 
         <Link to="projects" className="mx-auto">
-          <Button className=" mx-auto px-6 py-4 !rounded-md text-xl bg-primary" onClick={() => {}}>
+          <Button className=" mx-auto px-6 py-4 rounded-md text-white text-xl bg-primary" onClick={() => {}}>
             See All Projects
           </Button>
         </Link>

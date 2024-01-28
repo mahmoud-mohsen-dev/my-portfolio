@@ -36,10 +36,13 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
         </p>
 
         <div className="mt-4 flex flex-wrap gap-6 justify-center md-des:justify-start">
-          <Anchor className=" bg-red-dark px-5 py-3 rounded" href={liveSrc}>
+          <Anchor className=" bg-red-dark px-5 py-3 rounded text-white" href={liveSrc}>
             View Demo
           </Anchor>
-          <Anchor className={`px-5 py-3 rounded ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`} href={codeSrc}>
+          <Anchor
+            className={`px-5 py-3 rounded text-white ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`}
+            href={codeSrc}
+          >
             Source Code
           </Anchor>
         </div>

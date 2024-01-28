@@ -15,19 +15,17 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         {/* About section */}
         <div className=" sm-des:col-span-8">
           <HeadingSection sectionName="about" className={`text-white`} />
-          <div className=" relative z-10 mx-auto mt-8 max-w-[60ch] rounded-3xl bg-red-light p-6">
-            <p className=" mb-5 text-center text-3xl font-semibold text-black">
-              I&rsquo;m a computer science graduate with a great passion for creating a beautiful websites.
+          <div className=" relative z-10 mx-auto mt-8 max-w-[68ch] rounded-xl bg-red-light p-6">
+            <p className=" mb-5 text-left text-[24px] font-semibold text-black">
+              I&rsquo;m a computer science graduate with 5 years of experience in sales, happy to leverage my skills to
+              grow your businesses. Let&rsquo;s work together!
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* modal */}
               <Modal />
               {/* <ModalButton /> */}
-              <Anchor
-                className="rounded-xl bg-white px-3 py-4 text-xl !text-black"
-                href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
-              >
-                View CV
+              <Anchor className="rounded-md bg-white px-3 py-4 text-xl text-black" href="#contact" blank={false}>
+                Get in touch
               </Anchor>
             </div>
           </div>
