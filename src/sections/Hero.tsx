@@ -43,7 +43,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
             mahmoud mohsen
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
-          <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-des:justify-end">
+          <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-tab:justify-end">
             <Anchor
               className="rounded-md bg-white px-4 py-4 text-2xl text-black block w-fit"
               href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
