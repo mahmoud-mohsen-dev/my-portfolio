@@ -14,8 +14,10 @@ function ProjectsSection({ darkModeIsOn, projectsData, isChallenge }: projectsSe
   if (isChallenge) {
     projectOrChallengesElements = (
       <div className="container mt-10 grid grid-cols-fit-450 gap-x-12 gap-y-16">
-        {result.map((challenge) => {
-          return <Challenge info={challenge} darkModeIsOn={darkModeIsOn} key={challenge.description} />;
+        {result.map((challenge, i) => {
+          return (
+            <Challenge info={challenge} darkModeIsOn={darkModeIsOn} key={challenge.description + i + new Date()} />
+          );
         })}
       </div>
     );
@@ -23,7 +25,9 @@ function ProjectsSection({ darkModeIsOn, projectsData, isChallenge }: projectsSe
     projectOrChallengesElements = (
       <div className="container grid gap-16">
         {result.map((project, i) => {
-          return <Project info={project} darkModeIsOn={darkModeIsOn} key={project.description + i} index={i} />;
+          return (
+            <Project info={project} darkModeIsOn={darkModeIsOn} key={project.description + i + new Date()} index={i} />
+          );
         })}
       </div>
     );

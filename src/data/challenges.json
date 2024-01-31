@@ -1,12 +1,102 @@
 [
   {
-    "imgSrc": "./projects-images/social-media-app.png",
-    "imgAlt": "social app",
-    "title": "social app",
-    "description": "social media platform to connect with other people, Seamlessly create, update, and delete posts with ease.",
-    "tools": ["JavaScript", "Bootstrap", "Axios", "Postman"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-media-app/",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-media-app",
+    "imgSrc": "./challenges-images/usePopcorn-preview.png",
+    "imgAlt": "usePopcorn",
+    "title": "usePopcorn",
+    "description": "A website to rate your favorite movies and added to your watchlist.",
+    "tools": ["TypeScript", "React", "TailwindCSS", "Omdb API", "Vite"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 1
+  },
+  {
+    "imgSrc": "./challenges-images/eat-n-split-preview.png",
+    "imgAlt": "eat-n-split",
+    "title": "EAT-N-SPLIT",
+    "description": "An app to calculate the spliting of the bill between you and your friend.",
+    "tools": ["TypeScript", "React", "TailwindCSS", "Vite"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 2
+  },
+  {
+    "imgSrc": "./challenges-images/react-quiz-preview.png",
+    "imgAlt": "Answer every question correctly before times end.",
+    "title": "React Quiz",
+    "description": "Answer every question correctly before times end.",
+    "tools": ["React", "TypeScript", "CSS", "Vite"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 3
+  },
+  {
+    "imgSrc": "./challenges-images/elzero-dashboard-preview.png",
+    "imgAlt": "Elzero Dashboard Template",
+    "title": "Elzero Dashboard Template",
+    "description": "",
+    "tools": ["HTML", "CSS"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 4
+  },
+  {
+    "imgSrc": "./challenges-images/pray-times-preview.png",
+    "imgAlt": "prayer times",
+    "title": "prayer times",
+    "description": "Get your current city pray times",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 5
+  },
+  {
+    "imgSrc": "./challenges-images/faraway-preview.png",
+    "imgAlt": "Far Away",
+    "title": "🌴 Far Away 💼",
+    "description": "ToDo app for far away trips",
+    "tools": ["TypeScript", "React", "CSS", "Vite"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": 6
+  },
+  {
+    "imgSrc": "./challenges-images/elzero-template-preview.png",
+    "imgAlt": "Elzero Template",
+    "title": "Elzero Template",
+    "description": "",
+    "tools": ["HTML", "CSS"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": null
+  },
+  {
+    "imgSrc": "./challenges-images/kasper-preview.png",
+    "imgAlt": "Kasper Template",
+    "title": "Kasper Template",
+    "description": "",
+    "tools": ["HTML", "CSS"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": null
+  },
+  {
+    "imgSrc": "./challenges-images/leon-preview.png",
+    "imgAlt": "Leon Agency Template",
+    "title": "Leon Agency Template",
+    "description": "",
+    "tools": ["HTML", "CSS"],
+    "liveSrc": "",
+    "codeSrc": "",
+    "order": null
+  },
+  {
+    "imgSrc": "./challenges-images/tenzies-preview.png",
+    "imgAlt": "Tenzies Game",
+    "title": "Tenzies Game",
+    "description": "",
+    "tools": ["React", "CSS", "Vite"],
+    "liveSrc": "",
+    "codeSrc": "",
     "order": null
   }
 ]

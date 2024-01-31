@@ -15,8 +15,8 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         {/* About section */}
         <div className=" sm-des:col-span-8">
           <HeadingSection sectionName="about" className={`text-white`} />
-          <div className=" relative z-10 mx-auto mt-8 max-w-[70ch] rounded-xl bg-red-light p-6">
-            <p className=" mb-5 text-center sm-tab:text-left text-lg sm-tab:text-2xl font-semibold text-black">
+          <div className=" relative z-10 mx-auto mt-8 max-w-[60ch] rounded-xl bg-red-light p-10">
+            <p className=" mb-5 text-center text-lg !leading-[2.4rem] text-pretty sm-tab:text-2xl font-semibold text-black">
               I&rsquo;m a computer science graduate with 5 years of experience in sales. I&rsquo;m happy to leverage my
               skills to help grow your business. Let&rsquo;s work together!
             </p>

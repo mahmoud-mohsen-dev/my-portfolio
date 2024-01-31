@@ -1,5 +1,15 @@
 [
   {
+    "imgSrc": "./projects-images/social-media-app.png",
+    "imgAlt": "social app",
+    "title": "social app",
+    "description": "social media platform to connect with other people, Seamlessly create, update, and delete posts with ease.",
+    "tools": ["JavaScript", "Bootstrap", "HTML", "Axios", "Tarmeez API", "Postman"],
+    "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-media-app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-media-app",
+    "order": 1
+  },
+  {
     "imgSrc": "./projects-images/who-will-win-the-million.png",
     "imgAlt": "who will win the million quiz game",
     "title": "who will win the million",
@@ -7,24 +17,14 @@
     "tools": ["React", "TypeScript", "CSS", "Figma"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/who-will-win-the-million/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/who-will-win-the-million",
-    "order": 1
-  },
-  {
-    "imgSrc": "./projects-images/social-media-app.png",
-    "imgAlt": "social app",
-    "title": "social app",
-    "description": "social media platform to connect with other people, Seamlessly create, update, and delete posts with ease.",
-    "tools": ["JavaScript", "Bootstrap", "Axios", "Postman"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-media-app/",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-media-app",
     "order": 2
   },
   {
-    "imgSrc": "./projects-images/filter-app.png",
+    "imgSrc": "./projects-images/trendfoot-preview.png",
     "imgAlt": "Filter Shoe App",
     "title": "TrendFoot",
     "description": "Smart filters, vibrant color choices, and top-brand selections make shoe shopping a breeze.",
-    "tools": ["React", "CSS"],
+    "tools": ["React", "TypeScript", "CSS"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/filter-by-category/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/filter-by-category",
     "order": 3
@@ -35,7 +35,7 @@
     "title": "My Portfolio",
     "description": "Digital Portfolio: Uncover a spectrum of my work",
     "tools": ["React", "TailwindCSS", "TypeScript"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/portfolio/",
+    "liveSrc": "#home",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/portfolio",
     "order": null
   }
