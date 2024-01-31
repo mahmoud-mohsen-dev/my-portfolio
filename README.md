@@ -4,7 +4,7 @@
 
 ## Try it Live!
 
-Check out the live app [mahmoud-mohsen-portfolio]()
+Check out the live app [mahmoud-mohsen-portfolio](https://mahmoud-mohsen.vercel.app/)
 
 ## Features
 
@@ -12,7 +12,7 @@ Check out the live app [mahmoud-mohsen-portfolio]()
 
 - **Dark and Light Modes:** Switch between dark and light themes for a personalized reading experience.
 
-- **Animated Hero Section:** Simple animation for the name title in the hero section.
+- **Animated Hero Section:** Added animation for the name title in the hero section.
 
 - **Responsive Design:** Ensures a visually appealing and functional experience across various devices.
 
@@ -30,7 +30,7 @@ Design complexity and aesthetics.
 2. Gathered feedback from peers.
 3. Started building the portfolio.
 
-## Tools and libraries Used
+## Tools and libraries used
 
 - TypeScript
 - TailwindCSS
