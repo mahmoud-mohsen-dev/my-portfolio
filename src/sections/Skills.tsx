@@ -9,7 +9,7 @@ import tailwindcss from '../assets/app-images/tailwind.svg';
 import bootstrapImg from '../assets/app-images/bootstrap.svg';
 import gitImg from '../assets/app-images/git.svg';
 import figmaImg from '../assets/app-images/figma.svg';
-import githubIMg from '../assets/app-images/github-skills-section.svg';
+import githubIMg from '../assets/app-images/github-red.svg';
 import Skill from '../components/smallRusable/Skill';
 
 function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
@@ -24,7 +24,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
             <Skill src={cssImg} alt="CSS icon" tool="CSS" />
             <Skill src={typescriptImg} alt="TypeScript icon" tool="TypeScript" />
             <Skill src={gitImg} alt="GIT icon" tool="GIT" />
-            <Skill src={githubIMg} alt="GitHub icon" tool="GitHub" />
+            <Skill src={githubIMg} alt="GitHub icon" tool="GitHub" imgClassName="fill-red-dark" />
             <Skill src={tailwindcss} alt="TailwindCSS icon" tool="TailwindCSS" />
             <Skill src={htmlImg} alt="HTML icon" tool="HTML" />
             <Skill src={bootstrapImg} alt="Bootstrap icon" tool="Bootstrap" />
@@ -36,7 +36,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         <img
           src={aboutMeImg}
           alt="about-me"
-          className="mx-auto mt-10 self-center sm-des:col-span-4 sm-des:col-start-9"
+          className="mx-auto mt-10 self-center sm-des:col-span-4 sm-des:col-start-9 "
         />
       </div>
     </section>

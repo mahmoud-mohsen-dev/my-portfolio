@@ -1,6 +1,6 @@
 import Logo from '../components/navbar/Logo';
-import twitterIcon from '../assets/app-images/twitter.svg';
-import githubIcon from '../assets/app-images/github.svg';
+import mail from '../assets/app-images/mail.svg';
+import githubIcon from '../assets/app-images/github-white.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
 import SocialIcon from '../components/smallRusable/SocialIcon';
 import { Link, useLocation } from 'react-router-dom';
@@ -22,7 +22,7 @@ function Footer() {
       )}
 
       <div className="flex w-40 justify-center gap-5">
-        <SocialIcon href="https://twitter.com/mahmoud_codes" src={twitterIcon} alt="twitter icon" />
+        <SocialIcon href="mailto:mahmoud-mohsen-developer@gmail.com" src={mail} alt="mail icon" />
         <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
         <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
       </div>

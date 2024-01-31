@@ -1,9 +1,9 @@
 import HeadingSection from '../components/smallRusable/HeadingSection';
 import blobShape from '../assets/app-images/blob-shape-skill-and-about-section.svg';
 import Anchor from '../components/buttons/Anchor';
-import githubIcon from '../assets/app-images/github.svg';
+import githubIcon from '../assets/app-images/github-white.svg';
 import linkedinIcon from '../assets/app-images/linkedin.svg';
-import twitterIcon from '../assets/app-images/twitter.svg';
+import mailIcon from '../assets/app-images/mail.svg';
 import SocialIcon from '../components/smallRusable/SocialIcon';
 import Modal from '../components/smallRusable/Modal';
 
@@ -33,7 +33,7 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
         {/* Social Icons */}
         <div className=" relative  z-[1] mx-auto mt-20 flex justify-between rounded-3xl bg-[rgba(14,36,49,0.3)] p-5 md-mob:w-80 sm-des:col-start-9 sm-des:mt-0 sm-des:h-fit sm-des:place-self-end ">
-          <SocialIcon href="https://twitter.com/mahmoud_codes" src={twitterIcon} alt="twitter icon" />
+          <SocialIcon href="mailto:mahmoud-mohsen-developer@gmail.com" src={mailIcon} alt="mail icon" />
           <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
           <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
         </div>
