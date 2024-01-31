@@ -35,7 +35,7 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
           {description}
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-6 justify-start">
+        <div className="mt-4 flex-wrap gap-6 justify-start hidden">
           <Anchor className=" bg-red-dark px-5 py-3 rounded text-white" href={liveSrc}>
             View Demo
           </Anchor>

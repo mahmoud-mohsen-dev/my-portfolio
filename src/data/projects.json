@@ -3,10 +3,10 @@
     "imgSrc": "./projects-images/social-media-app.png",
     "imgAlt": "social app",
     "title": "social app",
-    "description": "Social media platform to connect with other people, seamlessly create, update, and delete posts with ease.",
+    "description": "A social media platform to connect with other people, and seamlessly create, update, and delete posts with ease.",
     "tools": ["JavaScript", "Bootstrap", "HTML", "Axios", "Tarmeez API", "Postman"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-media-app/",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-media-app",
+    "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-app",
     "order": 1
   },
   {
@@ -15,7 +15,7 @@
     "title": "who will win the million",
     "description": "An interactive web-based quiz game inspired by the popular TV show 'Who Wants to Be a Millionaire'.",
     "tools": ["React", "TypeScript", "CSS", "Figma"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/who-will-win-the-million/",
+    "liveSrc": "https://who-will-win-the-million.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/who-will-win-the-million",
     "order": 2
   },
@@ -25,8 +25,8 @@
     "title": "TrendFoot",
     "description": "Smart filters, vibrant color choices, and top-brand selections make shoe shopping a breeze.",
     "tools": ["React", "TypeScript", "CSS"],
-    "liveSrc": "https://mahmoud-mohsen-dev.github.io/filter-by-category/",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/filter-by-category",
+    "liveSrc": "https://trendfoot.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/trendfoot",
     "order": 3
   },
   {
@@ -34,9 +34,9 @@
     "imgAlt": "mahmoud mohsen portfolio",
     "title": "My Portfolio",
     "description": "Digital Portfolio: Uncover a spectrum of my work",
-    "tools": ["React", "TailwindCSS", "TypeScript"],
+    "tools": ["React", "TailwindCSS", "TypeScript", "Figma"],
     "liveSrc": "#home",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/portfolio",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
     "order": null
   }
 ]
