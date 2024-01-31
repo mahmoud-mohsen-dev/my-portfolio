@@ -93,9 +93,9 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
                 <img src={mailBox} alt="mailbox with some plane paper flying" className=" hidden md-des:block" />
                 <div className="flex sm-des:mt-10 justify-between items-center leading-5 ">
                   <h2 className="font-bold text-xl relative">
-                    {myEmail}
+                    <span className={darkModeIsOn ? 'text-blue-light' : 'text-gray-dark'}>{myEmail}</span>
                     <button
-                      className={`cursor-pointer hidden md-des:block text-xl absolute top-0 right-0 z-10 translate-x-[140%] font-semibold transition-colors duration-200 ${isCopied ? 'text-green-500' : 'text-primary'}`}
+                      className={`cursor-pointer hidden md-des:block text-xl absolute top-0 right-0 z-10 translate-x-[140%] font-semibold transition-colors duration-200 ${isCopied ? 'text-green-500' : ' text-blue-medium'}`}
                       onClick={() => {
                         setIsCopied(true);
                         navigator.clipboard.writeText(myEmail);
