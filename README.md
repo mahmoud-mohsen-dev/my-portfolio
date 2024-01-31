@@ -6,30 +6,28 @@
 
 Check out the live app [mahmoud-mohsen-portfolio]()
 
-## How to Use
-
-1. Scoll down to each section to view different sections of my portfolio.
-2. Clicking on `See All Projects` button will take you to `Projcets` page.
-3. Clicking on `See All ChalFlenges` button will take you to `Challenges` page.
-4. Change between dark mode and light mode by clicking on sun or moon button that is located on top right in the navbar.
-
 ## Features
 
-- Animated Avatar that begin the animation on every reload.
-- Added dark and light modes.
-- Added animation to hero section name.
-- Make the portfolio responsive.
-- Created form contact that send messages directly to my email.
-- Navigate between different routes.
+- **Animated Avatar:** Dynamic avatar animation on every page reload.
+
+- **Dark and Light Modes:** Switch between dark and light themes for a personalized reading experience.
+
+- **Animated Hero Section:** Simple animation for the name title in the hero section.
+
+- **Responsive Design:** Ensures a visually appealing and functional experience across various devices.
+
+- **Contact Form:** Easily send messages directly to my email through the implemented contact form.
+
+- **Route Navigation:** Effortless movement between different sections or pages.
 
 ## Challenges
 
-Designing it was challenging for me. and making the app looks good.
+Design complexity and aesthetics.
 
 **How i tackled this challenge**
 
 1. Used figma to preview the look of my portfolio before building it.
-2. Get feedback from other people of my design.
+2. Gathered feedback from peers.
 3. Started building the portfolio.
 
 ## Tools and libraries Used
@@ -50,12 +48,12 @@ Designing it was challenging for me. and making the app looks good.
 1. Clone this repository.
 
    ```bash
-   git clone
+   git clone https://github.com/mahmoud-mohsen-dev/My-Portfolio.git
    ```
 
 2. Navigate to the Project Directory:
    ```bash
-   cd
+   cd My-Portfolio
    ```
 3. Install Dependencies:
 
@@ -63,9 +61,7 @@ Designing it was challenging for me. and making the app looks good.
     npm install
    ```
 
-4. Development Server
-
-   ##### Start the Development Server:
+4. Start the Development Server:
 
    ```bash
    npm run dev
@@ -75,4 +71,4 @@ Designing it was challenging for me. and making the app looks good.
 
    Open your web browser and go to http://localhost:3000 to see the app in action.
 
-_Now you have the "mahmoud mohsen portfolio" app up and running on your local machine._
+_Now, Mahmoud Mohsen's portfolio is up and running on your local machine._
