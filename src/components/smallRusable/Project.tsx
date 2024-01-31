@@ -8,7 +8,7 @@ function Project({ info, darkModeIsOn, index }: { info: projectType; darkModeIsO
   const isEven = countId % 2 === 0;
   return (
     <div
-      className={`flex flex-col gap-5  sm-des:mx-auto sm-des:max-w-[1000px] sm-des:items-center sm-des:gap-20 md-des:max-w-[1300px] ${isEven ? 'sm-des:flex-row-reverse' : 'sm-des:flex-row'}`}
+      className={`flex flex-col gap-5 justify-between  sm-des:mx-auto sm-des:max-w-[1000px] sm-des:items-center sm-des:gap-20 md-des:max-w-[1300px] ${isEven ? 'sm-des:flex-row-reverse' : 'sm-des:flex-row'}`}
     >
       <a
         className={`relative block transition-shadow ease-transform sm-des:max-w-[55%] ${hover ? 'shadow-projectHoverShadow' : 'shadow-projectIdleShadow '}`}
