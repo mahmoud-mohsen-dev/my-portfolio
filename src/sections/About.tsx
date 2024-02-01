@@ -6,8 +6,9 @@ import linkedinIcon from '../assets/app-images/linkedin.svg';
 import mailIcon from '../assets/app-images/mail.svg';
 import SocialIcon from '../components/smallRusable/SocialIcon';
 import Modal from '../components/smallRusable/Modal';
+import { darkModeIsOnType } from '../types/myTypes';
 
-function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
+function About({ darkModeIsOn, cvUrl }: darkModeIsOnType) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
     <section className={`${aboutStyles} relative overflow-hidden`}>
@@ -22,7 +23,7 @@ function About({ darkModeIsOn }: { darkModeIsOn: boolean }) {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* modal */}
-              <Modal />
+              <Modal cvURl={cvUrl || ''} />
               {/* <ModalButton /> */}
               <Anchor className="rounded-md bg-white px-4 py-4 text-xl text-black" href="#contact" blank={false}>
                 Get in touch

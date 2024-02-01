@@ -1,6 +1,7 @@
 export type setState<T> = React.Dispatch<React.SetStateAction<T>>;
 
 export interface darkModeIsOnType {
+  cvUrl?: string;
   darkModeIsOn: boolean;
 }
 
@@ -22,6 +23,7 @@ export interface TabsProps<T> {
 
 export interface HeroProps {
   darkModeIsOn: boolean;
+  cvUrl: string;
 }
 
 export interface ButtonProps<M> {
@@ -66,6 +68,7 @@ export interface DarkAndCvButtonsProps {
   cvBtnStyles: string;
   closeNavWindow: () => void;
   darkModeIsOn: boolean;
+  cvUrl: string;
   setDarkModeIsOn: React.Dispatch<React.SetStateAction<boolean>>;
 }
 

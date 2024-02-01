@@ -3,7 +3,7 @@ import { TEModal, TEModalDialog, TEModalContent, TEModalHeader, TEModalBody } fr
 import Button from '../buttons/Button';
 import Anchor from '../buttons/Anchor';
 
-export default function VerticalyCentered(): JSX.Element {
+export default function VerticalyCentered({ cvURl }: { cvURl: string }): JSX.Element {
   const [showVerticalyCenteredScrollModal, setShowVerticalyCenteredScrollModal] = useState(false);
   return (
     <div>
@@ -71,7 +71,7 @@ export default function VerticalyCentered(): JSX.Element {
               </p>
               <Anchor
                 className="rounded-lg bg-red-dark text-white px-3 py-4 text-xl mx-auto my-2 block w-fit"
-                href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
+                href={cvURl}
               >
                 View CV
               </Anchor>

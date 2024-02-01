@@ -10,14 +10,18 @@ import ScrollToTop from './components/smallRusable/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
+  const cvUrl = 'https://drive.google.com/file/d/1JreMNPBM8B2Qyeb3PuJpA2hTVE9N_K3f/view?usp=drive_link';
   return (
     <BrowserRouter>
       <ScrollToTop />
       <AnimatePresence initial={false}>
         <Routes>
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/" element={<HomePage darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} />}>
-            <Route path="/" element={<HomeMain darkModeIsOn={darkModeIsOn} />} />
+          <Route
+            path="/"
+            element={<HomePage darkModeIsOn={darkModeIsOn} setDarkModeIsOn={setDarkModeIsOn} cvUrl={cvUrl} />}
+          >
+            <Route path="/" element={<HomeMain darkModeIsOn={darkModeIsOn} cvUrl={cvUrl} />} />
             <Route path="projects" element={<ProjectsMain darkModeIsOn={darkModeIsOn} />} />
             <Route path="challenges" element={<ChallengesMain darkModeIsOn={darkModeIsOn} />} />
             <Route path="contact" element={<Contact darkModeIsOn={darkModeIsOn} />} />

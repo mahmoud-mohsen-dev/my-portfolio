@@ -9,7 +9,7 @@ import Lottie, { LottieRefCurrentProps } from 'lottie-react';
 import animationData from '../data/person-smiling-animation.json';
 import { useRef } from 'react';
 
-function Hero({ darkModeIsOn }: HeroProps) {
+function Hero({ darkModeIsOn, cvUrl }: HeroProps) {
   const personRef = useRef<LottieRefCurrentProps>(null);
   const heroStyles = darkModeIsOn ? 'bg-gray-dark text-white' : 'bg-secondary';
   const jobTitleStyles = darkModeIsOn ? 'text-red-medium' : 'text-red-dark';
@@ -44,10 +44,7 @@ function Hero({ darkModeIsOn }: HeroProps) {
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
           <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-tab:justify-end">
-            <Anchor
-              className="rounded-md bg-white px-4 py-4 text-2xl text-black block w-fit"
-              href="https://drive.google.com/file/d/1d45q1btHjTNrjyUrHY4NwmYVjsW7CH6t/view?usp=sharing"
-            >
+            <Anchor className="rounded-md bg-white px-4 py-4 text-2xl text-black block w-fit" href={cvUrl}>
               View CV
             </Anchor>
             <Anchor

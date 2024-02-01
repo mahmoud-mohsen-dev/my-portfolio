@@ -7,7 +7,7 @@ import Tabs from '../components/navbar/Tabs';
 import { Link, useLocation } from 'react-router-dom';
 import NotHomeTabs from '../components/navbar/NotHomeTabs';
 
-function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
+function Navbar({ darkModeIsOn, cvUrl, setDarkModeIsOn }: NavbarProps<boolean>) {
   // hamburger icon is clicked
   const [isOpen, setOpen] = useState(false);
   const [openNav, setOpenNav] = useState(false);
@@ -90,6 +90,7 @@ function Navbar({ darkModeIsOn, setDarkModeIsOn }: NavbarProps<boolean>) {
             cvBtnStyles={cvBtnStyles}
             closeNavWindow={closeNavWindow}
             darkModeIsOn={darkModeIsOn}
+            cvUrl={cvUrl || ''}
             setDarkModeIsOn={setDarkModeIsOn}
           />
         </div>
