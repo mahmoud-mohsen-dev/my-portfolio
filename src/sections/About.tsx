@@ -18,7 +18,7 @@ function About({ darkModeIsOn, cvUrl }: darkModeIsOnType) {
           <HeadingSection sectionName="about" className={`text-white`} />
           <div className=" relative z-10 mx-auto mt-8 max-w-[74ch] rounded-xl bg-red-light p-10">
             <p className=" mb-5 text-center text-lg !leading-[2.4rem] text-pretty sm-tab:text-2xl font-semibold text-black">
-              I&rsquo;m a computer science graduate with 5 years of experience in sales. I&rsquo;m happy to leverage my
+              I&rsquo;m a computer science graduate with 4 years of experience in sales. I&rsquo;m happy to leverage my
               skills to help grow your business. Let&rsquo;s work together!
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">

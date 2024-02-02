@@ -8,6 +8,7 @@ import ChallengesMain from './routes/ChallengesMain';
 import Contact from './sections/Contact';
 import ScrollToTop from './components/smallRusable/ScrollToTop';
 import { AnimatePresence } from 'framer-motion';
+
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);
   const cvUrl = 'https://drive.google.com/file/d/1JreMNPBM8B2Qyeb3PuJpA2hTVE9N_K3f/view?usp=drive_link';
