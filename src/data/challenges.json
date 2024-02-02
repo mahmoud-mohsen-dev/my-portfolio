@@ -5,18 +5,18 @@
     "title": "usePopcorn",
     "description": "A website to rate your favorite movies and added to your watchlist.",
     "tools": ["TypeScript", "React", "TailwindCSS", "Omdb API", "Vite"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://use-pop-corn-react.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/usePopcorn",
     "order": 1
   },
   {
     "imgSrc": "./challenges-images/eat-n-split-preview.png",
     "imgAlt": "eat-n-split",
     "title": "EAT-N-SPLIT",
-    "description": "An app to calculate the spliting of the bill between you and your friend.",
+    "description": "An app designed to calculate the distribution of expenses between you and your friend.",
     "tools": ["TypeScript", "React", "TailwindCSS", "Vite"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://eat-n-split-demo.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/eat-n-split",
     "order": 2
   },
   {
@@ -25,8 +25,8 @@
     "title": "React Quiz",
     "description": "Answer every question correctly before times end.",
     "tools": ["React", "TypeScript", "CSS", "Vite"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://react-quiz-rouge.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/react-quiz",
     "order": 3
   },
   {
@@ -35,8 +35,8 @@
     "title": "Elzero Dashboard Template",
     "description": "",
     "tools": ["HTML", "CSS"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://elzero-dashboard-template.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/elzero-dashboard-template",
     "order": 4
   },
   {
@@ -45,8 +45,8 @@
     "title": "prayer times",
     "description": "Get your current city pray times",
     "tools": ["JavaScript", "HTML", "CSS"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://mahmoud-mohsen-dev.github.io/prayer-times/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/prayer-times",
     "order": 5
   },
   {
@@ -55,8 +55,8 @@
     "title": "🌴 Far Away 💼",
     "description": "ToDo app for far away trips",
     "tools": ["TypeScript", "React", "CSS", "Vite"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://far-away-demo.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/far-away",
     "order": 6
   },
   {
@@ -65,8 +65,8 @@
     "title": "Elzero Template",
     "description": "",
     "tools": ["HTML", "CSS"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://elzero-template-demo.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/elzero-template",
     "order": null
   },
   {
@@ -75,8 +75,8 @@
     "title": "Kasper Template",
     "description": "",
     "tools": ["HTML", "CSS"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://kasper-template-nine.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/kasper-template",
     "order": null
   },
   {
@@ -85,8 +85,8 @@
     "title": "Leon Agency Template",
     "description": "",
     "tools": ["HTML", "CSS"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://leon-template-beta.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/leon-template",
     "order": null
   },
   {
@@ -95,8 +95,28 @@
     "title": "Tenzies Game",
     "description": "",
     "tools": ["React", "CSS", "Vite"],
-    "liveSrc": "",
-    "codeSrc": "",
+    "liveSrc": "https://tenzies-game-sigma-gold.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/tenzies-game",
+    "order": null
+  },
+  {
+    "imgSrc": "./challenges-images/my-calculator-preview.png",
+    "imgAlt": "My Calculator",
+    "title": "My Calculator",
+    "description": "",
+    "tools": ["JavaScript", "HTML", "CSS"],
+    "liveSrc": "https://my-calculator-demo.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/myCalculator",
+    "order": null
+  },
+  {
+    "imgSrc": "./challenges-images/currency-converter-preview.png",
+    "imgAlt": "Currency Converter",
+    "title": "Currency Converter",
+    "description": "",
+    "tools": ["React", "CSS", "create-react-app"],
+    "liveSrc": "https://currency-calculator-demo.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/currency-converter",
     "order": null
   }
 ]

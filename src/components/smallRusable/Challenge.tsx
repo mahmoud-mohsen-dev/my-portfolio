@@ -5,7 +5,7 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
   const { imgSrc, imgAlt, title, description, tools, liveSrc, codeSrc } = info;
   return (
     <div className={`p-4 py-6 rounded-xl flex flex-col ${darkModeIsOn ? ' bg-gray-700' : 'bg-blue-50 '}`}>
-      <motion.a className="overflow-hidden block rounded-xl " href={liveSrc}>
+      <motion.a className="overflow-hidden block rounded-xl " href={liveSrc} target="_blank">
         <img
           src={imgSrc}
           alt={imgAlt}
@@ -35,13 +35,14 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
           {description}
         </p>
 
-        <div className="mt-4 flex-wrap gap-6 justify-start hidden">
-          <Anchor className=" bg-red-dark px-5 py-3 rounded text-white" href={liveSrc}>
+        <div className="mt-4 flex-wrap gap-6 justify-start flex">
+          <Anchor className=" bg-red-dark px-5 py-3 rounded text-white" href={liveSrc} blank={liveSrc ? true : false}>
             View Demo
           </Anchor>
           <Anchor
             className={`px-5 py-3 rounded text-white ${darkModeIsOn ? 'bg-gray-medium' : 'bg-black'}`}
             href={codeSrc}
+            blank={liveSrc ? true : false}
           >
             Source Code
           </Anchor>

@@ -6,7 +6,7 @@ function Anchor({ className, children, blank = true, href }: AnchorProps<string>
       href={href}
       target={blank ? '_blank' : ''}
       rel="noreferrer"
-      className={` cursor-pointer font-titan font-normal tracking-wide shadow-buttonShadow transition-all  active:scale-90 hover:md-tab:scale-110 md-tab:active:scale-90 ${className} `}
+      className={` cursor-pointer font-titan font-normal tracking-wide shadow-buttonShadow transition-all  active:scale-90 hover:md-tab:scale-105 md-tab:active:scale-90 ${className} `}
     >
       {children}
     </a>
