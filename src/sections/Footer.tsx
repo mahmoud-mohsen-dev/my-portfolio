@@ -26,7 +26,7 @@ function Footer() {
         <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
         <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
       </div>
-      <p className="text-2xl font-bold text-white">&copy; 2024 Mahmoud Mohsen</p>
+      <p className="text-2xl font-bold text-white text-center">&copy; 2024 Mahmoud Mohsen</p>
     </footer>
   );
 }
