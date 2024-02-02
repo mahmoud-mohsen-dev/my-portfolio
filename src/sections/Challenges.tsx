@@ -22,7 +22,7 @@ function Challenges({ darkModeIsOn }: { darkModeIsOn: boolean }) {
         })}
       </div>
       <Link
-        to="/challenges"
+        to="challenges"
         className="mx-auto block w-fit text-white font-normal bg-primary py-3 px-5 text-xl rounded-md mt-16 my-10 cursor-pointer font-titan tracking-wide shadow-buttonShadow transition-all  active:scale-90 hover:md-tab:scale-110 md-tab:active:scale-90 "
       >
         see all challenges
