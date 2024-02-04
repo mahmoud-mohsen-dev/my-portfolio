@@ -41,7 +41,6 @@ Design complexity and aesthetics.
 - framer-motion
 - lottie-react
 - tw-elements-react
-- lottie-react
 
 ## Getting Started
 
