@@ -26,6 +26,7 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* Button trigger vertically centered scrollable modal */}
+
               <Button
                 className="bg-red-dark px-6 sm-tab:px-5 py-4 text-xl rounded-md text-white "
                 onClick={() => {

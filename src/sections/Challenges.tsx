@@ -12,7 +12,6 @@ function Challenges({ darkModeIsOn }: { darkModeIsOn: boolean }) {
     return 0;
   });
   const onlySix = ordered.slice(0, 6);
-  console.log(onlySix);
   return (
     <div className={`py-10 ${darkModeIsOn ? 'bg-black' : 'bg-gray-dark'}`}>
       <HeadingSection sectionName="Challenges" className={`text-white`} />
