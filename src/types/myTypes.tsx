@@ -5,6 +5,10 @@ export interface darkModeIsOnType {
   darkModeIsOn: boolean;
 }
 
+export type HomeProps = darkModeIsOnType;
+
+export type AboutProps = darkModeIsOnType;
+
 export interface NavbarProps<T> extends darkModeIsOnType {
   setDarkModeIsOn: setState<T>;
 }

@@ -34,7 +34,7 @@
     "imgAlt": "mahmoud mohsen portfolio",
     "title": "My Portfolio",
     "description": "Digital Portfolio: Uncover a spectrum of my work",
-    "tools": ["React", "TailwindCSS", "TypeScript", "LottieFiles", "Framer-Motion", "Figma"],
+    "tools": ["React", "TailwindCSS", "TypeScript", "LottieFiles", "Framer-Motion", "EmailJS", "Figma"],
     "liveSrc": "#home",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
     "order": null

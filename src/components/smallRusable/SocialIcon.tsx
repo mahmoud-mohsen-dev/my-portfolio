@@ -6,7 +6,7 @@ function SocialIcon({ className, href, src, alt }: { className?: string; href: s
       href={href}
       className={` flex justify-center items-center transition-transform duration-300 ease-transform hover:-translate-y-2 ${className}`}
     >
-      <img src={src} alt={alt} />
+      <img src={src} alt={alt} className="w-12  md-mob:w-fit" />
     </a>
   );
 }

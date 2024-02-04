@@ -40,7 +40,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
   return (
     <section
-      className={` ${path === '' ? 'py-[56px]' : 'min-h-screen grid place-items-center pt-10'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
+      className={` ${path === '' ? 'py-[56px]' : 'min-h-screen md-mob:grid place-items-center pt-32 sm-tab:pt-10'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
       id="contact"
       data-section
     >
@@ -91,8 +91,8 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               {/* copy email */}
               <div>
                 <img src={mailBox} alt="mailbox with some plane paper flying" className=" hidden md-des:block" />
-                <div className="flex sm-des:mt-10 justify-between items-center leading-5 ">
-                  <h2 className="font-bold text-xl relative">
+                <div className="flex pb-10 sm-tab:pb-0 sm-des:mt-10 justify-between items-center leading-5 ">
+                  <h2 className="font-bold text-xs md-mob:text-base sm-tab:text-xl relative">
                     <span
                       className={` text-center block mx-auto ${darkModeIsOn ? 'text-blue-light' : 'text-gray-dark'}`}
                     >

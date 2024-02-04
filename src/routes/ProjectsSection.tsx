@@ -13,7 +13,7 @@ function ProjectsSection({ darkModeIsOn, projectsData, isChallenge }: projectsSe
   let projectOrChallengesElements;
   if (isChallenge) {
     projectOrChallengesElements = (
-      <div className="container mt-10 grid grid-cols-fit-450 gap-x-12 gap-y-16">
+      <div className="container mt-10 grid md-mob:grid-cols-fit-450 gap-x-12 gap-y-16">
         {result.map((challenge, i) => {
           return (
             <Challenge info={challenge} darkModeIsOn={darkModeIsOn} key={challenge.description + i + new Date()} />
