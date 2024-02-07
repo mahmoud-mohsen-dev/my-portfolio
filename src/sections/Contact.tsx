@@ -36,7 +36,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const location = useLocation();
   const path = location.pathname.split('/')[1];
 
-  const myEmail = 'mahmoud-mohsen-developer@gmail.com';
+  const myEmail = 'mahmoud.mohsen.developer@gmail.com';
 
   return (
     <section

@@ -22,7 +22,7 @@ function Footer() {
       )}
 
       <div className="flex w-40 justify-center gap-5">
-        <SocialIcon href="mailto:mahmoud-mohsen-developer@gmail.com" src={mail} alt="mail icon" />
+        <SocialIcon href="mailto:mahmoud.mohsen.developer@gmail.com" src={mail} alt="mail icon" />
         <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
         <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
       </div>

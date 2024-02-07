@@ -47,7 +47,7 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
         <Modal cvURl={cvUrl || ''} showModal={showModal} setShowModal={setShowModal} />
         {/* Social Icons */}
         <div className=" relative  z-10 mx-auto mt-20 flex justify-between rounded-3xl bg-[rgba(14,36,49,0.3)] p-5 md-mob:w-80 sm-des:col-start-9 sm-des:mt-0 sm-des:h-fit sm-des:place-self-end ">
-          <SocialIcon href="mailto:mahmoud-mohsen-developer@gmail.com" src={mailIcon} alt="mail icon" />
+          <SocialIcon href="mailto:mahmoud.mohsen.developer@gmail.com" src={mailIcon} alt="mail icon" />
           <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
           <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
         </div>
