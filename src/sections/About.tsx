@@ -15,18 +15,20 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
     <section className={`${aboutStyles} relative overflow-hidden`}>
-      <div className="container py-10 pt-8 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+      <div className="container py-12 pt-8 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+        {/* Modal */}
+        <Modal cvURl={cvUrl || ''} showModal={showModal} setShowModal={setShowModal} />
+
         {/* About info */}
         <div className={`relative z-20 sm-des:col-span-8`}>
           <HeadingSection sectionName="about" className={`text-white`} />
-          <div className={`mx-auto mt-8 max-w-[74ch] rounded-xl bg-red-light px-5 py-8 md-tab:p-10`}>
-            <p className=" mb-5 text-center text-lg !leading-[2.4rem] text-pretty sm-tab:text-2xl font-semibold text-black">
+          <div className={`mx-auto mt-8 max-w-[68ch] rounded-xl bg-red-light px-5 py-8 md-tab:p-6`}>
+            <p className=" mb-5 text-center text-lg !leading-[2.4rem] text-pretty sm-tab:text-[22px] font-semibold text-black">
               I&rsquo;m a computer science graduate with 4 years of experience in sales. I&rsquo;m happy to leverage my
               skills to help grow your business. Let&rsquo;s work together!
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* Button trigger vertically centered scrollable modal */}
-
               <Button
                 className="bg-red-dark px-6 sm-tab:px-5 py-4 text-xl rounded-md text-white "
                 onClick={() => {
@@ -43,8 +45,6 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
           </div>
         </div>
 
-        {/* Modal */}
-        <Modal cvURl={cvUrl || ''} showModal={showModal} setShowModal={setShowModal} />
         {/* Social Icons */}
         <div className=" relative  z-10 mx-auto mt-20 flex justify-between rounded-3xl bg-[rgba(14,36,49,0.3)] p-5 md-mob:w-80 sm-des:col-start-9 sm-des:mt-0 sm-des:h-fit sm-des:place-self-end ">
           <SocialIcon href="mailto:mahmoud.mohsen.developer@gmail.com" src={mailIcon} alt="mail icon" />

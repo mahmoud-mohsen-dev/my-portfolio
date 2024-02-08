@@ -16,7 +16,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const skillsStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
     <section className={`text-white ${skillsStyles}`}>
-      <div className="container py-8 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+      <div className="container py-12 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         <div className="sm-des:col-span-8">
           <HeadingSection sectionName="skills" className="text-white" />
           <div className="mt-10 grid grid-cols-fit-150 gap-x-2 gap-y-5">
