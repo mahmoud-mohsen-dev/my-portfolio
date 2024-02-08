@@ -12,13 +12,13 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
   const [showModal, setShowModal] = useState(false);
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
-    <section className={`${aboutStyles} relative overflow-hidden`}>
+    <section className={`${aboutStyles}`}>
       <div className="container pt-14 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         {/* Modal */}
         <Modal cvURl={cvUrl || ''} showModal={showModal} setShowModal={setShowModal} />
 
         {/* About info */}
-        <div className={`relative z-20 sm-des:col-span-8`}>
+        <div className={`relative z-20 sm-des:col-span-8 md-des:mr-12`}>
           <HeadingSection sectionName="about" className={`text-white`} />
           <div className={`mx-auto mt-8 max-w-[72ch] rounded-xl bg-red-light px-5 py-8 sm-des:py-8`}>
             <p className=" mb-5 text-center text-xl !leading-[2.4rem] text-pretty md-des:text-2xl font-semibold text-black">
