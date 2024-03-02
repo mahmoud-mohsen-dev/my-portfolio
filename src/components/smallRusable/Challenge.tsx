@@ -12,7 +12,7 @@ function Challenge({ info, darkModeIsOn }: { info: challengeType; darkModeIsOn: 
           className="transition-transform ease-transform duration-300 scale-[1.02] hover:rotate-6 hover:scale-125"
         />
       </motion.a>
-      <ul className=" flex flex-wrap gap-x-2 gap-y-1 mt-5 mb-2">
+      <ul className=" flex flex-wrap gap-2 mt-5 mb-2">
         {tools.map((item, i) => (
           <li
             className={`font-poppins text-red-medium text-sm border-red-medium px-1 border rounded-sm`}

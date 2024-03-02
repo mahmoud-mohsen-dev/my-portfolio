@@ -44,11 +44,14 @@ function Hero({ darkModeIsOn, cvUrl }: HeroProps) {
           </h1>
           <h2 className={`capitalize md-tab:text-right ${jobTitleStyles}`}>frontend web developer</h2>
           <div className="mx-auto mt-6 flex gap-5 flex-wrap justify-center md-tab:justify-end">
-            <Anchor className="rounded-md bg-white px-4 py-4 text-2xl text-black block w-fit" href={cvUrl}>
+            <Anchor
+              className="rounded-md bg-white h-fit px-2 py-2.5 text-xl md-tab:px-4 md-tab:py-4 md-tab:text-2xl text-black block w-fit"
+              href={cvUrl}
+            >
               View CV
             </Anchor>
             <Anchor
-              className={`block w-fit rounded-md bg-gradient-to-r from-primary to-blue-600 px-4 py-4 text-2xl text-white `}
+              className={`block w-fit rounded-md bg-gradient-to-r from-primary to-blue-600 h-fit px-2 py-2.5 text-xl md-tab:px-4 md-tab:py-4 md-tab:text-2xl text-white `}
               href="#projects"
               blank={false}
             >

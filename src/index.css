@@ -6,18 +6,9 @@
   --primary-scrollbar-color: #80a1f8;
   scroll-behavior: smooth;
 }
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--primary-scrollbar-color) var(--secondary-scrollbar-color);
-}
 
-/* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
-}
-
-*::-webkit-scrollbar-track {
+  scrollbar-width: thin;
   background: var(--secondary-scrollbar-color);
 }
 

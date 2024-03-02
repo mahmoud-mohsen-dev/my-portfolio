@@ -7,7 +7,7 @@
     "tools": ["JavaScript", "Bootstrap", "Axios", "Tarmeez-API", "Postman"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-app",
-    "order": 1
+    "order": 3
   },
   {
     "imgSrc": "./projects-images/who-will-win-the-million.png",
@@ -27,7 +27,7 @@
     "tools": ["React", "TypeScript", "CSS"],
     "liveSrc": "https://trendfoot.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/trendfoot",
-    "order": 3
+    "order": 1
   },
   {
     "imgSrc": "./projects-images/portfolio.png",

@@ -20,15 +20,16 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
         {/* About info */}
         <div className={`relative z-20 sm-des:col-span-8 md-des:mr-12`}>
           <HeadingSection sectionName="about" className={`text-white`} />
-          <div className={`mx-auto mt-8 max-w-[72ch] rounded-xl bg-red-light px-5 py-8 sm-des:py-8`}>
-            <p className=" mb-5 text-center text-xl !leading-[2.4rem] text-pretty md-des:text-2xl font-semibold text-black">
-              I&rsquo;m a computer science graduate with 4 years of experience in sales. I&rsquo;m happy to leverage my
-              skills to help grow your business. Let&rsquo;s work together!
+          <div className={`mx-auto mt-8 max-w-[75ch] rounded-xl bg-red-light px-5 py-8 sm-des:py-8`}>
+            <p className=" mb-5 text-center text-lg !leading-[1.8rem] sm-des:!leading-[2.4rem] text-pretty md-des:text-2xl font-semibold text-black">
+              I&rsquo;m a computer science graduate passionate about creating aesthetically pleasing websites. I&rsquo;m
+              happy to leverage my skills to help grow your business. Let&rsquo;s work together and bring your vision to
+              life.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-5">
               {/* Button trigger vertically centered scrollable modal */}
               <Button
-                className="bg-red-dark px-6 sm-tab:px-5 py-4 text-xl rounded-md text-white "
+                className="bg-red-dark px-3 text-base sm-tab:px-5 py-4 sm-tab:text-xl rounded-md text-white "
                 onClick={() => {
                   setShowModal(true);
                 }}
@@ -36,7 +37,11 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
                 Read More
               </Button>
               {/* Contact Button */}
-              <Anchor className="rounded-md bg-white px-4 py-4 text-xl text-black" href="#contact" blank={false}>
+              <Anchor
+                className="rounded-md bg-white px-3 text-base sm-tab:px-5 py-4 sm-tab:text-xl text-black"
+                href="#contact"
+                blank={false}
+              >
                 Get in touch
               </Anchor>
             </div>
