@@ -40,7 +40,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
   return (
     <section
-      className={` ${path === '' ? 'py-[56px]' : 'min-h-screen md-mob:grid place-items-center pt-32 sm-tab:pt-10'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
+      className={` ${path === '' ? 'py-[40px]' : 'min-h-screen md-mob:grid place-items-center pt-16 sm-tab:pt-0'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
       id="contact"
       data-section
     >
@@ -54,7 +54,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
           ) : (
             <>
               <form className="flex w-[500px] flex-col gap-6 rounded-2xl bg-black p-8" onSubmit={sendEmail} ref={form}>
-                <h3 className="text-center font-titan text-3xl text-white mb-2">Send me a message</h3>
+                <h3 className="text-center font-titan text-3xl text-white mb-1">Send me a message</h3>
                 <input
                   type="text"
                   name="user_name"
@@ -69,7 +69,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
                   className={`${inputSyles} basis-1/2 leading-none`}
                   required
                 />
-                <textarea rows={5} name="message" className={`${inputSyles}`} placeholder="Message" required></textarea>
+                <textarea rows={4} name="message" className={`${inputSyles}`} placeholder="Message" required></textarea>
 
                 <Button
                   className="mx-auto w-fit bg-primary px-10 py-3 font-titan text-3xl rounded-md text-white"

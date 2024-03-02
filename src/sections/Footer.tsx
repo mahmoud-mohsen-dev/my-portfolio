@@ -10,23 +10,23 @@ function Footer() {
   const path = location.pathname;
 
   return (
-    <footer className="flex flex-col place-items-center gap-5 bg-black py-5">
+    <footer className="flex flex-col place-items-center gap-3 bg-black py-3">
       {path === '/' ? (
         <a href="#home">
-          <Logo height={50} fill="#4675F4" />
+          <Logo height={36} fill="#4675F4" />
         </a>
       ) : (
         <Link to="/">
-          <Logo height={50} fill="#4675F4" />
+          <Logo height={36} fill="#4675F4" />
         </Link>
       )}
 
-      <div className="flex w-40 justify-center gap-5">
+      <div className="flex w-32 justify-center gap-5">
         <SocialIcon href="mailto:mahmoud.mohsen.developer@gmail.com" src={mail} alt="mail icon" />
         <SocialIcon href="https://github.com/mahmoud-mohsen-dev" src={githubIcon} alt="github icon" />
         <SocialIcon href="https://www.linkedin.com/in/mahmoud-mohsen-dev/" src={linkedinIcon} alt="linkedin icon" />
       </div>
-      <p className="text-2xl font-bold text-white text-center">&copy; 2024 Mahmoud Mohsen</p>
+      <p className="text-xl font-bold text-white text-center">&copy; 2024 Mahmoud Mohsen</p>
     </footer>
   );
 }

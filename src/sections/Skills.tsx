@@ -20,7 +20,7 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
   const skillsStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
     <section className={`text-white relative overflow-hidden ${skillsStyles}`}>
-      <div className="container pb-52 sm-des:pb-14 pt-14 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+      <div className="container pb-52 sm-des:pb-14 pt-10 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         <div className="sm-des:col-span-8 relative z-10">
           <HeadingSection sectionName="skills" className="text-white" />
           <div className="mt-10 grid grid-cols-fit-150 gap-y-5">

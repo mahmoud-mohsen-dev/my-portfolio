@@ -13,7 +13,7 @@ function About({ darkModeIsOn, cvUrl }: AboutProps) {
   const aboutStyles = darkModeIsOn ? 'bg-black' : 'bg-gray-dark';
   return (
     <section className={`${aboutStyles}`}>
-      <div className="container pt-14 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
+      <div className="container pt-10 sm-des:grid sm-des:grid-cols-12 sm-des:gap-x-5">
         {/* Modal */}
         <Modal cvURl={cvUrl || ''} showModal={showModal} setShowModal={setShowModal} />
 
