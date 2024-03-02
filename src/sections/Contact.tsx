@@ -40,14 +40,14 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
   return (
     <section
-      className={` ${path === '' ? 'py-[40px]' : 'min-h-screen md-mob:grid place-items-center pt-16 sm-tab:pt-0'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
+      className={` ${path === '' ? 'pt-10 sm-tab:py-[40px]' : ' md-mob:grid place-items-center pt-24 pb-5'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
       id="contact"
       data-section
     >
       <PopUp showPopUp={showPopUp} setShow={setShowPopUp} />
       <div className="container">
         {/* <HeadingSection sectionName="Get In Touch" className={`mb-20 ${darkModeIsOn ? 'text-white' : 'text-black'}`} /> */}
-        <div className="flex items-center justify-center gap-y-10 gap-x-32 flex-wrap">
+        <div className="flex items-center justify-center gap-y-5 gap-x-32 flex-wrap">
           {/* Form */}
           {showPopUp.success || showPopUp.isSubmited ? (
             <h3 className="font-mochiy text-3xl">Thank you 😊</h3>
@@ -91,7 +91,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
               {/* copy email */}
               <div>
                 <img src={mailBox} alt="mailbox with some plane paper flying" className=" hidden md-des:block" />
-                <div className="flex pb-10 sm-tab:pb-0 sm-des:mt-10 justify-between items-center leading-5 ">
+                <div className="flex sm-des:mt-10 justify-between items-center leading-5 ">
                   <h2 className="font-bold text-xs md-mob:text-base sm-tab:text-xl relative">
                     <span
                       className={` text-center block mx-auto ${darkModeIsOn ? 'text-blue-light' : 'text-gray-dark'}`}
