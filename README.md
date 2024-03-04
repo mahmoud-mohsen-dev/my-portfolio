@@ -47,12 +47,12 @@ Design complexity and aesthetics.
 1. Clone this repository.
 
    ```bash
-   git clone https://github.com/mahmoud-mohsen-dev/My-Portfolio.git
+   git clone https://github.com/mahmoud-mohsen-dev/my-portfolio.git
    ```
 
 2. Navigate to the Project Directory:
    ```bash
-   cd My-Portfolio
+   cd my-portfolio
    ```
 3. Install Dependencies:
 
@@ -70,4 +70,4 @@ Design complexity and aesthetics.
 
    Open your web browser and go to http://localhost:3000 to see the app in action.
 
-_Now, Mahmoud Mohsen's portfolio is up and running on your local machine._
+_Now, Mahmoud Mohsen portfolio is up and running on your local machine._
