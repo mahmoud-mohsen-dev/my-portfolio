@@ -1,6 +1,6 @@
-import Skills from '../../sections/Skills';
-import About from '../../sections/About';
-import { AboutProps } from '../../types/myTypes';
+import Skills from './Skills';
+import About from './About';
+import { AboutProps } from '../types/myTypes';
 function AboutSection({ darkModeIsOn, cvUrl }: AboutProps) {
   return (
     <section id="about" data-section>

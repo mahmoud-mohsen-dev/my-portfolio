@@ -3,7 +3,7 @@ import Projects from '../sections/Projects';
 import Contact from '../sections/Contact';
 import { HomeProps } from '../types/myTypes';
 import Challenges from '../sections/Challenges';
-import AboutSection from '../components/smallRusable/AboutSection';
+import AboutSection from '../sections/AboutSection';
 
 function Home({ darkModeIsOn, cvUrl = '' }: HomeProps) {
   return (

@@ -1,13 +1,15 @@
+import { AnimatePresence } from 'framer-motion';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
+
+import ScrollToTop from './components/smallRusable/ScrollToTop';
+
 import PageNotFound from './pages/PageNotFound';
 import HomePage from './pages/HomePage';
 import HomeMain from './routes/HomeMain';
 import ProjectsMain from './routes/ProjectsMain';
 import ChallengesMain from './routes/ChallengesMain';
 import Contact from './sections/Contact';
-import ScrollToTop from './components/smallRusable/ScrollToTop';
-import { AnimatePresence } from 'framer-motion';
 
 function App() {
   const [darkModeIsOn, setDarkModeIsOn] = useState(false);

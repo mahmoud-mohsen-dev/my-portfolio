@@ -10,6 +10,16 @@
     "order": 1
   },
   {
+    "imgSrc": "./challenges-images/worldwise-preview.png",
+    "imgAlt": "Worldwise",
+    "title": "Worldwise",
+    "description": "A world map that tracks your footsteps into every city you can think of. Never forget your wonderful experiences.",
+    "tools": ["React", "CSS Module", "React Router", "Leaflet", "React Leaflet", "Datepicker", "Json Server", "Vite"],
+    "liveSrc": "https://worldwise-flame.vercel.app",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/worldwise",
+    "order": 7
+  },
+  {
     "imgSrc": "./challenges-images/usePopcorn-preview.png",
     "imgAlt": "usePopcorn",
     "title": "usePopcorn",
@@ -17,7 +27,7 @@
     "tools": ["TypeScript", "React", "TailwindCSS", "Omdb API", "Vite"],
     "liveSrc": "https://use-pop-corn-react.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/usePopcorn",
-    "order": 2
+    "order": 3
   },
   {
     "imgSrc": "./challenges-images/eat-n-split-preview.png",
@@ -37,7 +47,7 @@
     "tools": ["React", "TypeScript", "CSS", "Vite"],
     "liveSrc": "https://react-quiz-rouge.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/react-quiz",
-    "order": 3
+    "order": 4
   },
   {
     "imgSrc": "./challenges-images/elzero-dashboard-preview.png",
@@ -47,7 +57,7 @@
     "tools": ["HTML", "CSS"],
     "liveSrc": "https://elzero-dashboard-template.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/elzero-dashboard-template",
-    "order": 4
+    "order": 5
   },
   {
     "imgSrc": "./challenges-images/pray-times-preview.png",
