@@ -7,11 +7,9 @@ function Project({ info, darkModeIsOn, index }: { info: projectType; darkModeIsO
   const countId = index + 1;
   const isEven = countId % 2 === 0;
   return (
-    <div
-      className={`flex flex-col gap-5 justify-between  sm-des:mx-auto sm-des:max-w-[1000px] sm-des:items-center sm-des:gap-20 md-des:max-w-[1300px] ${isEven ? 'sm-des:flex-row-reverse' : 'sm-des:flex-row'}`}
-    >
+    <div className={`sm-des:grid mt-5 ${isEven ? 'grid-cols-[2fr_3fr]' : 'grid-cols-[3fr_2fr]'} gap-16 items-center`}>
       <a
-        className={`relative block transition-shadow ease-transform sm-des:max-w-[55%] ${hover ? 'shadow-projectHoverShadow' : 'shadow-projectIdleShadow '}`}
+        className={`relative block transition-shadow ease-transform ${isEven ? 'order-2' : ''}  ${hover ? 'shadow-projectHoverShadow' : 'shadow-projectIdleShadow '}`}
         href={liveSrc}
         target="_blank"
         rel="noreferrer"
@@ -61,7 +59,7 @@ function Project({ info, darkModeIsOn, index }: { info: projectType; darkModeIsO
       </a>
 
       {/* project Description */}
-      <div>
+      <div className="mt-5 sm-des:mt-0">
         <h3
           className={`font-titan text-2xl capitalize tracking-wide md-des:text-[2rem] md-des:leading-10 ${darkModeIsOn ? 'text-white' : 'text-black'}`}
         >
