@@ -45,8 +45,8 @@
     "title": "Sihtk Blamsa",
     "description": "A platform designed to support a healthy lifestyle by tracking physical activities, setting goals, and offering articles and educational resources.",
     "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Vite"],
-    "liveSrc": "#home",
-    "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
+    "liveSrc": "https://sihtk-bilamsa.vercel.app/",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/Sihtk_Bilamsa",
     "order": 1
   }
 ]
