@@ -38,5 +38,15 @@
     "liveSrc": "#home",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
     "order": null
+  },
+  {
+    "imgSrc": "./projects-images/sihtk-blamsa-preview.png",
+    "imgAlt": "sihtk-blamsa-preview.png",
+    "title": "SIHTK BLAMSA",
+    "description": "Sihtk Bilamsa is a platform that helps you lead a healthy lifestyle. With our tools, you can track physical activity and set goals. Our mission is to create a community of people passionate about health and enable individuals to lead a healthy lifestyle.",
+    "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Firebase", "Vite"],
+    "liveSrc": "#home",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
+    "order": null
   }
 ]
