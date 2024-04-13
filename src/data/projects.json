@@ -7,7 +7,7 @@
     "tools": ["JavaScript", "Bootstrap", "Axios", "Tarmeez-API", "Postman"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-app",
-    "order": 3
+    "order": 4
   },
   {
     "imgSrc": "./projects-images/who-will-win-the-million.png",
@@ -17,7 +17,7 @@
     "tools": ["React", "TypeScript", "CSS", "Figma"],
     "liveSrc": "https://who-will-win-the-million.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/who-will-win-the-million",
-    "order": 2
+    "order": 3
   },
   {
     "imgSrc": "./projects-images/trendfoot-preview.png",
@@ -27,7 +27,7 @@
     "tools": ["React", "TypeScript", "CSS"],
     "liveSrc": "https://trendfoot.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/trendfoot",
-    "order": 1
+    "order": 2
   },
   {
     "imgSrc": "./projects-images/portfolio.png",
@@ -42,11 +42,11 @@
   {
     "imgSrc": "./projects-images/sihtk-blamsa-preview.png",
     "imgAlt": "sihtk-blamsa-preview.png",
-    "title": "SIHTK BLAMSA",
-    "description": "Sihtk Bilamsa is a platform that helps you lead a healthy lifestyle. With our tools, you can track physical activity and set goals. Our mission is to create a community of people passionate about health and enable individuals to lead a healthy lifestyle.",
-    "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Firebase", "Vite"],
+    "title": "Sihtk Blamsa",
+    "description": "A platform designed to support a healthy lifestyle by tracking physical activities, setting goals, and offering articles and educational resources.",
+    "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Vite"],
     "liveSrc": "#home",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/My-Portfolio",
-    "order": null
+    "order": 1
   }
 ]
