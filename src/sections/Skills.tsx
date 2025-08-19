@@ -6,7 +6,7 @@ import htmlImg from '../assets/app-images/html.svg';
 import reactImg from '../assets/app-images/react.svg';
 import typescriptImg from '../assets/app-images/typesctipt.svg';
 import tailwindcss from '../assets/app-images/tailwind.svg';
-import bootstrapImg from '../assets/app-images/bootstrap.svg';
+// import bootstrapImg from '../assets/app-images/bootstrap.svg';
 import nextJsImg from '../assets/app-images/next-js.svg';
 import gitImg from '../assets/app-images/git.svg';
 import figmaImg from '../assets/app-images/figma.svg';
