@@ -7,6 +7,7 @@ import reactImg from '../assets/app-images/react.svg';
 import typescriptImg from '../assets/app-images/typesctipt.svg';
 import tailwindcss from '../assets/app-images/tailwind.svg';
 import bootstrapImg from '../assets/app-images/bootstrap.svg';
+import nextJsImg from '../assets/app-images/next-js.svg';
 import gitImg from '../assets/app-images/git.svg';
 import figmaImg from '../assets/app-images/figma.svg';
 import githubIMg from '../assets/app-images/github-red.svg';
@@ -31,7 +32,8 @@ function Skills({ darkModeIsOn }: { darkModeIsOn: boolean }) {
             <Skill src={githubIMg} alt="GitHub icon" tool="GitHub" imgClassName="fill-red-dark" />
             <Skill src={tailwindcss} alt="TailwindCSS icon" tool="TailwindCSS" />
             <Skill src={htmlImg} alt="HTML icon" tool="HTML" />
-            <Skill src={bootstrapImg} alt="Bootstrap icon" tool="Bootstrap" />
+            {/* <Skill src={bootstrapImg} alt="Bootstrap icon" tool="Bootstrap" /> */}
+            <Skill src={nextJsImg} alt="Next JS icon" tool="Next JS" />
             <Skill src={reactImg} alt="React icon" tool="React" />
             <Skill src={figmaImg} alt="Figma icon" tool="Figma" />
           </div>

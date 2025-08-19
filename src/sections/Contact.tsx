@@ -40,7 +40,7 @@ function Contact({ darkModeIsOn }: { darkModeIsOn: boolean }) {
 
   return (
     <section
-      className={` ${path === '' ? 'py-10 sm-tab:py-[40px]' : ' md-mob:grid place-items-center pt-24 pb-5'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
+      className={` ${path === '' ? 'py-10 sm-tab:py-[80px]' : ' md-mob:grid place-items-center pt-24 pb-5'} ${darkModeIsOn ? 'bg-gray-medium' : 'bg-blue-light'}`}
       id="contact"
       data-section
     >

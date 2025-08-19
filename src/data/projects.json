@@ -7,7 +7,7 @@
     "tools": ["JavaScript", "Bootstrap", "Axios", "Tarmeez-API", "Postman"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-app",
-    "order": 4
+    "order": 5
   },
   {
     "imgSrc": "./projects-images/who-will-win-the-million.png",
@@ -17,7 +17,7 @@
     "tools": ["React", "TypeScript", "CSS", "Figma"],
     "liveSrc": "https://who-will-win-the-million.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/who-will-win-the-million",
-    "order": 3
+    "order": 4
   },
   {
     "imgSrc": "./projects-images/trendfoot-preview.png",
@@ -27,7 +27,7 @@
     "tools": ["React", "TypeScript", "CSS"],
     "liveSrc": "https://trendfoot.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/trendfoot",
-    "order": 2
+    "order": 3
   },
   {
     "imgSrc": "./projects-images/portfolio.png",
@@ -47,6 +47,26 @@
     "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Vite"],
     "liveSrc": "https://sihtk-bilamsa.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/Sihtk_Bilamsa",
+    "order": 2
+  },
+  {
+    "imgSrc": "./projects-images/hamsa-tech-preview-english.png",
+    "imgAlt": "hamsa tech preview english image",
+    "title": "Hamsa Tech",
+    "description": "A complete e-commerce platform with an integrated blog, built using Next.js and Strapi, and deployed on a VPS with Dockploy. Developed for Hamsa Tech to sell security systems and POS devices online.",
+    "tools": [
+      "NextJS",
+      "TailwindCSS",
+      "TypeScript",
+      "Ant Design",
+      "QraphQl",
+      "Strapi",
+      "VPS",
+      "meilisearch",
+      "Chatwoot"
+    ],
+    "liveSrc": "https://hamsatech-eg.com",
+    "codeSrc": "https://github.com/mahmoud-mohsen-dev/hamsa-tech-frontend",
     "order": 1
   }
 ]

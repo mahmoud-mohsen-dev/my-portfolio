@@ -10,7 +10,7 @@ function Footer() {
   const path = location.pathname;
 
   return (
-    <footer className="flex flex-col place-items-center gap-3 bg-black py-3">
+    <footer className="flex flex-col place-items-center gap-5 bg-black py-8">
       {path === '/' ? (
         <a href="#home">
           <Logo height={36} fill="#4675F4" />
