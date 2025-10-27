@@ -7,7 +7,7 @@
     "tools": ["JavaScript", "Bootstrap", "Axios", "Tarmeez-API", "Postman"],
     "liveSrc": "https://mahmoud-mohsen-dev.github.io/social-app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/social-app",
-    "order": 5
+    "order": 8
   },
   {
     "imgSrc": "./projects-images/who-will-win-the-million.png",
@@ -17,7 +17,7 @@
     "tools": ["React", "TypeScript", "CSS", "Figma"],
     "liveSrc": "https://who-will-win-the-million.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/who-will-win-the-million",
-    "order": 4
+    "order": 7
   },
   {
     "imgSrc": "./projects-images/trendfoot-preview.png",
@@ -27,7 +27,7 @@
     "tools": ["React", "TypeScript", "CSS"],
     "liveSrc": "https://trendfoot.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/trendfoot",
-    "order": 3
+    "order": 6
   },
   {
     "imgSrc": "./projects-images/portfolio.png",
@@ -47,7 +47,7 @@
     "tools": ["React", "Sass", "TypeScript", "Ant Design", "Redux", "Axios", "React Query", "Vite"],
     "liveSrc": "https://sihtk-bilamsa.vercel.app/",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/Sihtk_Bilamsa",
-    "order": 2
+    "order": 5
   },
   {
     "imgSrc": "./projects-images/hamsa-tech-preview-english.png",
@@ -68,5 +68,32 @@
     "liveSrc": "https://hamsatech-eg.com",
     "codeSrc": "https://github.com/mahmoud-mohsen-dev/hamsa-tech-frontend",
     "order": 1
+  },
+  {
+    "imgSrc": "./projects-images/driftech-preview.png",
+    "imgAlt": "driftech preview image",
+    "title": "Driftech",
+    "description": "Driftech is a trusted car marketplace offering carefully selected vehicles. Users can submit a financing request, and Driftech works with partner lenders to help secure the best financing options.",
+    "tools": ["React", "TailwindCSS", "TypeScript", "Ant Design"],
+    "liveSrc": "https://driftech-website.vercel.app",
+    "order": 2
+  },
+  {
+    "imgSrc": "./projects-images/el-ghamry-preview.png",
+    "imgAlt": "el-ghamry preview image",
+    "title": "El Ghamry",
+    "description": "El Ghamry Auto for Car Trading — pioneers in car sales across Egypt, offering a wide range of premium vehicles and a seamless buying experience.",
+    "tools": ["React", "TailwindCSS", "TypeScript", "Hero UI"],
+    "liveSrc": "https://el-ghamry.vercel.app",
+    "order": 4
+  },
+  {
+    "imgSrc": "./projects-images/zydx-preview.png",
+    "imgAlt": "zydx preview image",
+    "title": "ZYDX",
+    "description": "Software company that designs and develops websites and mobile apps using modern technologies, tailored to real business needs.",
+    "tools": ["React", "TailwindCSS", "TypeScript", "Hero UI"],
+    "liveSrc": "https://zydx-solutions-react.vercel.app",
+    "order": 3
   }
 ]

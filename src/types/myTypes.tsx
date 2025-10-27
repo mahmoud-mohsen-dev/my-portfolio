@@ -50,8 +50,8 @@ export interface projectType {
   title: string;
   description: string;
   tools: string[];
-  liveSrc: string;
-  codeSrc: string;
+  liveSrc?: string;
+  codeSrc?: string;
   order: number | null;
 }
 
